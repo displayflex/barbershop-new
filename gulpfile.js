@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var gulp = require("gulp");
 var sass = require("gulp-sass");
@@ -21,6 +21,7 @@ var concat = require("gulp-concat");
 var htmlmin = require("gulp-htmlmin");
 var tinypng = require("gulp-tinypng-compress");
 var notify = require("gulp-notify");
+var mqpacker = require('css-mqpacker');
 
 // CSS
 
@@ -32,7 +33,10 @@ gulp.task("style", function () {
 		return "Problem here: " + error.message;
 	}))
 	.pipe(postcss([
-		autoprefixer()
+		autoprefixer(),
+		mqpacker({
+			sort: true
+		})
 	]))
 	.pipe(gulp.dest("build/css"))
 	.pipe(minify())
