@@ -1,0 +1,28 @@
+.main-nav {
+	width: 320px;
+	margin: 0 auto;
+}
+
+.main-nav__list {
+	@include list-reset;
+}
+
+@media (min-width: $tablet-width) {
+	.main-nav {
+		width: auto;
+		margin: 0;
+	}
+
+	.main-nav__wrapper {
+		display: flex;
+		justify-content: space-between;
+		width: 640px;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.main-nav__wrapper {
+		width: 960px;
+	}
+}
