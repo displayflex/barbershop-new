@@ -65,8 +65,7 @@ gulp.task("html", function () {
 
 gulp.task("concat", function() {
 	return gulp.src([
-			'app/js/login-popup.js',
-			'app/js/map-popup.js'
+			'app/js/main-nav.js'
 		])
 		.pipe(concat('scripts.min.js'))
 		.pipe(gulp.dest('build/js'));
