@@ -149,6 +149,7 @@
 	.main-nav {
 		width: auto;
 		margin: 0;
+		background-color: #000;
 	}
 
 	.main-nav__wrapper {
@@ -157,6 +158,10 @@
 		width: 640px;
 		margin: 0 auto;
 	}
+
+	.main-nav__toggle {
+		display: none;
+	}
 }
 
 @media (min-width: $desktop-width) {
@@ -164,5 +169,3 @@
 		width: 960px;
 	}
 }
-
-//41:30
