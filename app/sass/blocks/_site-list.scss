@@ -33,7 +33,9 @@
 	.site-list {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: flex-start;
+		//justify-content: flex-start; // для не резиновой версии
+		justify-content: space-between; // для резиновой версии
+		flex-grow: 1; // для резиновой версии
 		width: 570px;
 	}
 
@@ -113,3 +115,5 @@
 		}
 	}
 }
+
+// 5 - 1:58
