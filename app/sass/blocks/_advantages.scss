@@ -1,12 +1,10 @@
 .advantages {
-	background-color: #242424;
+	min-width: 320px;
 	text-align: center;
-	min-width: 320px; //min??
-
-	min-height: 350px; //??
+	background-color: #242424;
 
 	&__wrapper {
-		padding-bottom: 13px; //?
+		padding-bottom: 13px;
 	}
 
 	&__list {
@@ -16,11 +14,11 @@
 	}
 
 	&__item {
+		display: none;
 		padding-top: 153px;
 		color: #f7f4f1;
 		background-repeat: no-repeat;
 		background-position: center 28px;
-		display: none;
 
 		&--active {
 			display: block;
@@ -43,9 +41,9 @@
 	}
 
 	&__title {
-		font-size: 30px;
 		margin: 0;
 		margin-bottom: 15px;
+		font-size: 30px;
 		line-height: 1;
 		text-transform: uppercase;
 	}
@@ -63,18 +61,18 @@
 		width: 0;
 		height: 0;
 		border-top: 34px solid #242424;
-		border-left: calc(50vw) solid #fff;
 		border-right: calc(50vw) solid #fff;
 		border-bottom: none;
+		border-left: calc(50vw) solid #fff;
 	}
 }
 
 @media (min-width: $tablet-width) {
 	.advantages {
-		background-color: #353535;
-		min-width: 768px;
 		width: 100%;
+		min-width: 768px;
 		text-align: left;
+		background-color: #353535;
 
 		&__wrapper {
 			padding: 0;
@@ -106,8 +104,8 @@
 		}
 
 		&::after {
-			border-top-color: #353535;
 			border-top-width: 43px;
+			border-top-color: #353535;
 		}
 	}
 }
@@ -129,12 +127,12 @@
 		}
 
 		&__item {
-			padding: 125px 40px 0 40px;
-			flex-basis: 240px;
 			flex-grow: 1;
+			flex-basis: 240px;
+			padding: 125px 40px 0 40px;
 			background-position: center 0;
-			border-bottom: none;
 			border-right: 1px solid #4a4a4a;
+			border-bottom: none;
 
 			&:last-child {
 				border-right: none;
