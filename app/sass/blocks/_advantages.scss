@@ -1,0 +1,148 @@
+.advantages {
+	background-color: #242424;
+	text-align: center;
+	min-width: 320px; //min??
+
+	min-height: 350px; //??
+
+	&__wrapper {
+		padding-bottom: 13px; //?
+	}
+
+	&__list {
+		@include list-reset;
+		width: 72%;
+		margin: 0 auto;
+	}
+
+	&__item {
+		padding-top: 153px;
+		color: #f7f4f1;
+		background-repeat: no-repeat;
+		background-position: center 28px;
+		display: none;
+
+		&--active {
+			display: block;
+		}
+
+		&--fast {
+			background-image: url("../img/advantage-fast.svg");
+			background-size: 95px 94px;
+		}
+
+		&--cool {
+			background-image: url("../img/advantage-cool.svg");
+			background-size: 95px 89px;
+		}
+
+		&--price {
+			background-image: url("../img/advantage-price.svg");
+			background-size: 94px 92px;
+		}
+	}
+
+	&__title {
+		font-size: 30px;
+		margin: 0;
+		margin-bottom: 15px;
+		line-height: 1;
+		text-transform: uppercase;
+	}
+
+	&__description {
+		margin: 0;
+		margin-bottom: 30px;
+		font-size: 20px;
+		line-height: 1.35;
+	}
+
+	&::after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		border-top: 34px solid #242424;
+		border-left: calc(50vw) solid #fff;
+		border-right: calc(50vw) solid #fff;
+		border-bottom: none;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.advantages {
+		background-color: #353535;
+		min-width: 768px;
+		width: 100%;
+		text-align: left;
+
+		&__wrapper {
+			padding: 0;
+		}
+
+		&__list {
+			width: 74%;
+			margin: 0 auto;
+		}
+
+		&__item {
+			display: block;
+			min-height: 90px;
+			padding: 42px 0 35px 126px;
+			background-position: 0 center;
+			border-bottom: 1px solid #4a4a4a;
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
+
+		&__description {
+			margin-bottom: 0;
+		}
+
+		&__toggles {
+			display: none;
+		}
+
+		&::after {
+			border-top-color: #353535;
+			border-top-width: 43px;
+		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.advantages {
+		text-align: center;
+
+		&__wrapper {
+			padding-top: 80px;
+			padding-bottom: 35px;
+		}
+
+		&__list {
+			display: flex;
+			justify-content: space-between;
+			width: 80%;
+			max-width: 1200px;
+		}
+
+		&__item {
+			padding: 125px 40px 0 40px;
+			flex-basis: 240px;
+			flex-grow: 1;
+			background-position: center 0;
+			border-bottom: none;
+			border-right: 1px solid #4a4a4a;
+
+			&:last-child {
+				border-right: none;
+			}
+		}
+
+		&::after {
+			border-top-width: 64px;
+		}
+	}
+}

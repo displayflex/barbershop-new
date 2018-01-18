@@ -12,7 +12,11 @@
 <!-- Header -->
 <header class="page-header">
 	<a class="page-header__logo">
-		<img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
+		<picture>
+			<source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+			<source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+			<img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
+		</picture>
 	</a>
 
 	<nav class="main-nav main-nav--closed main-nav--no-js">
@@ -76,19 +80,19 @@
 		<table class="stats__list">
 			<tbody>
 				<tr>
-					<td class="stats__value">1 500 <sup>*</sup></td>
+					<td class="stats__value">1&nbsp;500&nbsp;<sup>*</sup></td>
 					<td class="stats__field">рублей <br>вложений</td>
 				</tr>
 				<tr>
-					<td class="stats__value">7 200</td>
+					<td class="stats__value">7&nbsp;200</td>
 					<td class="stats__field">секунд <br>времени мастера</td>
 				</tr>
 				<tr>
-					<td class="stats__value">90 000</td>
+					<td class="stats__value">90&nbsp;000</td>
 					<td class="stats__field">постриженных <br>волос</td>
 				</tr>
 				<tr>
-					<td class="stats__value">500 000 <sup>*</sup></td>
+					<td class="stats__value">500&nbsp;000&nbsp;<sup>*</sup></td>
 					<td class="stats__field">лайков <br>и комплиментов</td>
 				</tr>
 			</tbody>
@@ -102,21 +106,21 @@
 		<div class="advantages__wrapper slider">
 			<h2 class="visually-hidden">Наши преимущества</h2>
 			<ul class="advantages__list slider__list">
-				<li class="advantages__item advantages__item--fast slider__item">
+				<li class="advantages__item advantages__item--fast slider__item advantages__item--active">
 					<h3 class="advantages__title">Быстро</h3>
-					<p class="advantages-description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки</p>
+					<p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы — счастливый обладатель стильной стрижки-минутки</p>
 				</li>
 				<li class="advantages__item advantages__item--cool slider__item">
 					<h3 class="advantages__title">Круто</h3>
-					<p class="advantages-description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
+					<p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
 				</li>
 				<li class="advantages__item advantages__item--price slider__item">
 					<h3 class="advantages__title">Дорого</h3>
-					<p class="advantages-description">Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+					<p class="advantages__description">Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
 				</li>
 			</ul>
 			<p class="advantages__toggles slider__toggles">
-				<button class="slider__toggle">1</button>
+				<button class="slider__toggle slider__toggle--active">1</button>
 				<button class="slider__toggle">2</button>
 				<button class="slider__toggle">3</button>
 			</p>
