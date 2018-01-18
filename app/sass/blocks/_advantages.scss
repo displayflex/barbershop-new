@@ -2,6 +2,7 @@
 	min-width: 320px;
 	text-align: center;
 	background-color: #242424;
+	overflow: hidden;
 
 	&__wrapper {
 		padding-bottom: 13px;
@@ -61,9 +62,9 @@
 		width: 0;
 		height: 0;
 		border-top: 34px solid #242424;
-		border-right: calc(50vw) solid #fff;
+		border-right: calc(50vw) solid #f8f5f2;
 		border-bottom: none;
-		border-left: calc(50vw) solid #fff;
+		border-left: calc(50vw) solid #f8f5f2;
 	}
 }
 
