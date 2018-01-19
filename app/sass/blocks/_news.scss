@@ -2,23 +2,31 @@
 	min-width: 320px;
 	color: #000;
 	background-color: #f8f5f2;
+	border-bottom: 1px solid #e5ddd5;
 
 	&__wrapper {
 		padding: 35px 22px 28px;
+		text-align: center;
 	}
 
 	&__list {
 		@include list-reset;
+		margin: 0 auto;
+		max-width: 500px;
 	}
 
 	&__item {
 		position: relative;
 		margin-bottom: 15px;
 		padding-bottom: 20px;
-		padding-left: 70px;
+		min-height: 75px;
 
 		&--mobile-hidden {
 			display: none;
+		}
+
+		&:first-child { //???
+			border-bottom: 1px solid #e5ddd5;
 		}
 	}
 
@@ -28,6 +36,7 @@
 		line-height: 1;
 		text-align: center;
 		text-transform: uppercase;
+		font-weight: 700;
 	}
 
 	&__date {
@@ -43,11 +52,14 @@
 		text-align: center;
 		color: #fff;
 		background-color: #000;
+		font-weight: 400;
+		transition: all 0.3s ease;
 
 		b {
 			display: block;
 			font-size: 30px;
 			line-height: 1;
+			font-weight: 700;
 		}
 
 		&::after {
@@ -62,6 +74,7 @@
 			border-right: 25px solid transparent;
 			border-bottom: none;
 			border-left: 25px solid transparent;
+			transition: border-top-color 0.3s ease;
 		}
 	}
 
@@ -70,5 +83,89 @@
 		font-size: 18px;
 		line-height: 1.5;
 		text-align: left;
+		font-weight: 400;
+	}
+
+	&__to-all {
+		width: 280px;
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+}
+
+.news__link {
+	text-decoration: none;
+	cursor: pointer;
+	color: inherit;
+	display: block;
+	padding-left: 70px;
+	transition: color 0.3s ease;
+
+	&:hover,
+	&:focus {
+		color: $brown;
+
+		.news__date {
+			background-color: $brown;
+
+			&::after {
+				border-top-color: $brown;
+			}
+		}
+
+		.news__text {
+			text-decoration: underline;
+		}
+	}
+
+	&:active {
+		color: #6a4d38;
+
+		.news__date {
+			background-color: #6a4d38;
+			color: #a09187;
+
+			&::after {
+				border-top-color: #6a4d38;
+			}
+		}
+
+		.news__text {
+			text-decoration: underline;
+		}
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.news {
+		&__wrapper {
+			position: relative;
+			padding-left: 65px;
+			padding-right: 65px;
+		}
+
+		&__title {
+			font-size: 40px;
+			text-align: left;
+		}
+
+		&__list {
+			display: flex;
+			justify-content: center;
+			max-width: 100%; //?
+		}
+
+		&__item {
+			//flex-basis: 280px;
+			//margin-right: 40px;
+			width: 50%;
+			padding-right: 40px;
+		}
+
+		&__to-all {
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
 	}
 }
