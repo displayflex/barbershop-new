@@ -1,0 +1,267 @@
+.reviews {
+	color: #000;
+	background-color: #f8f5f2;
+
+	&__wrapper {
+		padding: 27px 20px 18px;
+	}
+
+	&__title {
+		margin: 0 0 28px;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 1;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__write {
+		display: none;
+	}
+
+	&__list {
+		box-sizing: border-box;
+		max-width: 500px;
+		min-height: 92px;
+		margin: 0 auto 26px;
+	}
+
+	&__item {
+		position: relative;
+		display: none;
+		margin: 0;
+
+		&--active {
+			display: flex;
+		}
+	}
+
+	&__author-picture {
+		flex-shrink: 0;
+		width: 48px;
+		height: 46px;
+		margin: 10px 20px 0 0;
+		border: 1px solid #e9e2db;
+	}
+
+	&__author-image {
+		width: 48px;
+	}
+
+	&__author-name {
+		display: block;
+		margin-bottom: 11px;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.13;
+		font-style: normal;
+	}
+
+	&__text {
+		margin: 0;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.5;
+	}
+
+	&__control {
+		display: none;
+	}
+
+	&__toggles .slider__toggle {
+		background-color: #f8f5f2;
+		border: 2px solid #939290;
+
+		&:hover {
+			background-color: #353535;
+			border-color: #353535;
+		}
+
+		&--active {
+			background-color: #353535;
+			border-color: #353535;
+		}
+	}
+
+	&::after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		border-top: 34px solid #f8f5f2;
+		border-right: calc(50vw) solid #292929;
+		border-bottom: none;
+		border-left: calc(50vw) solid #292929;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.reviews {
+		&__wrapper {
+			position: relative;
+			width: 83%;
+			max-width: 820px;
+			margin: 0 auto;
+			padding: 41px 0 71px;
+		}
+
+		&__title {
+			width: 75%;
+			margin-bottom: 42px;
+			font-size: 40px;
+			text-align: left;
+		}
+
+		&__write {
+			position: absolute;
+			top: 36px;
+			right: 0;
+			display: inline-block;
+			box-sizing: border-box;
+			width: 160px;
+		}
+
+		&__list {
+			position: relative;
+			max-width: 83%;
+			min-height: 160px;
+			margin-bottom: 0;
+			padding: 30px 26px;
+			border-top: 1px solid #e5ddd5;
+			border-bottom: 1px solid #e5ddd5;
+		}
+
+		&__author-picture {
+			width: 80px;
+			height: 80px;
+			margin-top: 8px;
+			margin-right: 29px;
+			border: none;
+		}
+
+		&__author-image {
+			width: 80px;
+			border-radius: 50%;
+		}
+
+		&__toggles {
+			position: absolute;
+			bottom: 67px;
+			left: 50%;
+			z-index: 1000;
+			padding-right: 24px;
+			padding-left: 24px;
+			background-color: #f8f5f2;
+			transform: translateX(-50%);
+		}
+
+		&::after {
+			display: none;
+		}
+	}
+
+	.reviews__control {
+		position: absolute;
+		top: -1px;
+		display: block;
+		box-sizing: content-box;
+		width: 48px;
+		height: 100%;
+		padding: 0;
+		font-size: 0;
+		background-color: #f8f5f2;
+		border: 1px solid #e5ddd5;
+
+		&--prev {
+			left: -50px;
+
+			&::after {
+				border-right: 12px solid #000;
+				border-left: none;
+			}
+		}
+
+		&--next {
+			right: -50px;
+
+			&::after {
+				border-right: none;
+				border-left: 12px solid #000;
+			}
+		}
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 19px;
+			display: block;
+			width: 0;
+			height: 0;
+			border-top: 6px solid transparent;
+			border-bottom: 6px solid transparent;
+			transform: translateY(-50%);
+		}
+
+		&:hover,
+		&:focus {
+			border-color: #d5c9bd;
+		}
+
+		&:active {
+			color: #958c84;
+			background-color: #d5c9bd;
+		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.reviews {
+		&__wrapper {
+			width: 80%;
+			max-width: 1200px;
+			padding-bottom: 98px;
+		}
+
+		&__title {
+			padding-left: 72px;
+		}
+
+		&__list {
+			max-width: 85%;
+			padding: 0;
+			border: none;
+		}
+
+		&__author-picture {
+			width: 249px;
+			height: 160px;
+			margin-top: 0;
+			margin-right: 0;
+		}
+
+		&__author-image {
+			width: 249px;
+			border-radius: 0;
+		}
+
+		&__description {
+			padding: 30px 45px 10px 68px;
+			border: 1px solid #e9e2db;
+		}
+
+		&__control {
+			&--prev {
+				left: -72px;
+			}
+
+			&--next {
+				right: -72px;
+			}
+		}
+
+		&__toggles {
+			bottom: 47px;
+		}
+	}
+}

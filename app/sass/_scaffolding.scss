@@ -26,6 +26,10 @@ body {
 	color: #f7f4f1;
 	font-style: normal;
 	background-color: $bg-darkgrey;
+
+	*:focus {
+		outline-color: $brown;
+	}
 }
 
 img {
