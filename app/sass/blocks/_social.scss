@@ -1,0 +1,39 @@
+.social {
+	&__list {
+		@include list-reset;
+		font-size: 0;
+		display: flex;
+		justify-content: center;
+	}
+
+	&__item {
+		display: block;
+		border: 1px solid #3e3e3e;
+		height: 101px;
+		width: 33.33%;
+	}
+
+	&__link {
+		text-decoration: none;
+		color: #fff;
+		display: block;
+		height: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+
+		&--vkontakte {
+			background-image: url("../img/social-vk.svg");
+			background-size: 38px auto;
+		}
+
+		&--facebook {
+			background-image: url("../img/social-facebook.svg");
+			background-size: 19px auto;
+		}
+
+		&--instagram {
+			background-image: url("../img/social-instagram.svg");
+			background-size: 36px auto;
+		}
+	}
+}

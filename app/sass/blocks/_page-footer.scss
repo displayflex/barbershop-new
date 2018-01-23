@@ -1,0 +1,19 @@
+.page-footer {
+	text-align: center;
+	color: #fff;
+	background-color: #292929;
+	border-top: 1px solid $bg-darkgrey;
+
+	&__wrapper {
+		padding-top: 31px;
+		padding-bottom: 24px;
+	}
+
+	&__contacts {
+		margin-bottom: 26px;
+	}
+
+	&__social {
+		margin-bottom: 29px;
+	}
+}

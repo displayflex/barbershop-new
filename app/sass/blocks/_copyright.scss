@@ -1,0 +1,30 @@
+.copyright {
+	padding-right: 20px;
+	padding-left: 20px;
+
+	&__text {
+		display: block;
+		font-weight: 400;
+		margin-bottom: 9px;
+	}
+
+	&__link {
+		display: block;
+		line-height: 1.5;
+		padding: 10px 20px;
+		color: #fff;
+		background-color: #292929;
+		border-color: #3e3e3e;
+
+		&:hover,
+		&:focus {
+			border-color: #515151;
+		}
+
+		&:active {
+			color: rgba(#fff, 0.3);
+			background-color: #252525;
+			border-color: #252525;
+		}
+	}
+}
