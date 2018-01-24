@@ -9,7 +9,10 @@
 	}
 
 	&__link {
-		display: block;
+		display: inline-block;
+		box-sizing: border-box;
+		width: 100%;
+		min-width: 160px;
 		padding: 10px 20px;
 		line-height: 1.5;
 		color: #fff;
@@ -32,10 +35,17 @@
 
 @media (min-width: $tablet-width) {
 	.copyright {
+		max-width: 40%;
 		padding: 0;
 
 		&__text {
 			margin-bottom: 11px;
 		}
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.copyright {
+		max-width: 33.33%;
 	}
 }

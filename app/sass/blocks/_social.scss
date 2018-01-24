@@ -25,7 +25,9 @@
 	}
 
 	&__link {
-		display: block;
+		display: inline-block;
+		box-sizing: border-box;
+		width: 100%;
 		height: 100%;
 		color: #fff;
 		text-decoration: none;
@@ -61,8 +63,16 @@
 	}
 }
 
+@media (min-width: $tablet-width) {
+	.social {
+		width: 100%;
+	}
+}
+
 @media (min-width: $desktop-width) {
 	.social {
+		width: 33.33%;
+
 		&__title {
 			display: block;
 			margin-bottom: 11px;

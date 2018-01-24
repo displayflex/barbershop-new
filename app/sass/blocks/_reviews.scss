@@ -118,7 +118,7 @@
 			right: 0;
 			display: inline-block;
 			box-sizing: border-box;
-			width: 160px;
+			min-width: 160px;
 		}
 
 		&__list {

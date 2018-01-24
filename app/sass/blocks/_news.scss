@@ -87,7 +87,7 @@
 
 	&__to-all {
 		box-sizing: border-box;
-		width: 280px;
+		min-width: 280px;
 	}
 }
 
@@ -170,8 +170,8 @@
 		&__to-all {
 			position: absolute;
 			top: 40px;
-			right: 0px;
-			width: 160px;
+			right: 0;
+			min-width: 160px;
 			box-sizing: border-box;
 		}
 	}

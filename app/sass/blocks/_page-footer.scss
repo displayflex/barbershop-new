@@ -27,19 +27,16 @@
 		}
 
 		&__contacts {
-			max-width: 70%;
 			margin: 0;
 		}
 
 		&__social {
 			order: 1;
-			width: 100%;
 			margin-top: 44px;
 			margin-bottom: 0;
 		}
 
 		&__copyright {
-			width: 160px;
 			margin-left: auto;
 		}
 	}
@@ -50,19 +47,19 @@
 		&__wrapper {
 			flex-wrap: no-wrap;
 			justify-content: flex-start;
+			max-width: 1200px;
+			margin: 0 auto;
 			padding-right: 120px;
 			padding-bottom: 56px;
 			padding-left: 120px;
 		}
 
 		&__contacts {
-			width: 33.33%;
 			margin: 0;
 		}
 
 		&__social {
 			order: 0;
-			width: 33.33%;
 			margin-top: 0;
 		}
 	}
