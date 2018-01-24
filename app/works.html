@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Барбершоп «Бородинский»</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="page-header">
+	<a class="page-header__logo">
+		<picture>
+			<source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+			<source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+			<img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
+		</picture>
+	</a>
+
+	<nav class="main-nav main-nav--closed main-nav--no-js">
+		<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+		<div class="main-nav__wrapper">
+			<ul class="main-nav__list site-list">
+				<li class="site-list__item site-list__item--active">
+					<a>Главная</a>
+				</li>
+				<li class="site-list__item">
+					<a href="photo.html">Наши работы</a>
+				</li>
+				<li class="site-list__item">
+					<a href="form.html">Записаться</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#">Контакты</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#">HTML Academy</a>
+				</li>
+			</ul>
+
+			<ul class="main-nav__list user-list">
+				<li class="user-list__item">
+					<a class="user-list__login" href="login.html">
+						<svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+						<g>
+							<path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M15,0h-2h-3H8C7.4,0,7,0.4,7,1c0,0.6,0.4,1,1,1h2h3h1v1v10v1h-3H8
+								c-0.6,0-1,0.4-1,1s0.4,1,1,1h3h2h2c0.6,0,1-0.4,1-1V1C16,0.4,15.6,0,15,0z"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M7,12l4-4L7,4v3H0.9C0.4,7,0,7.4,0,8c0,0.6,0.4,1,0.9,1H7V12z"/>
+						</g>
+						</svg>
+
+						Войти
+					</a>
+				</li>
+			</ul>
+		</div><!-- /main-nav__wrapper -->
+	</nav>
+</header>
+<!-- /Header -->
+
+<!-- Main -->
+<main class="inner-page">
+	<section class="inner-content works">
+		<div class="inner-content__wrapper">
+			<header class="inner-content__header">
+				<h1 class="inner-content__title">Наши работы</h1>
+				<a class="inner-content__link button" href="index.html" >На главную</a>
+			</header>
+
+			<div class="works__gallery">
+				<figure class="works__item work work--best"> <!-- ?? -->
+					<div class="work__image-wrapper"> <!-- p?? -->
+						<img class="work__image" src="" alt="Работа месяца - Лжепётр Мчиславский">
+					</div>
+					<b class="work__label">Работа месяца</b>
+					<figcaption class="work__info">
+						<h3 class="work__title">Лжепётр Мчиславский</h3>
+						<p class="work__descr">Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
+						<ul class="work__services-list">
+							<li class="work__services-item">Стрижка</li>
+							<li class="work__services-item">Бритье</li>
+							<li class="work__services-item">Усы</li>
+						</ul>
+					</figcaption>
+				</figure>
+
+				<figure class="works__item work">
+					<div class="work__image-wrapper">
+						<img class="work__image" src="" alt="Саша Мальцев">
+					</div>
+					<figcaption class="work__info">
+						<h3 class="work__title">Саша Мальцев</h3>
+						<p class="work__descr">Попросил омолодить и омолодили! Кто теперь скажет, что мне 45?</p>
+						<ul class="work__services-list">
+							<li class="work__services-item">Стрижка</li>
+						</ul>
+					</figcaption>
+				</figure>
+
+				<figure class="works__item work">
+					<div class="work__image-wrapper">
+						<img class="work__image" src="" alt="Владимир Иваныч">
+					</div>
+					<figcaption class="work__info">
+						<h3 class="work__title">Владимир Иваныч</h3>
+						<p class="work__descr">К зимнему сезону — готов!</p>
+						<ul class="work__services-list">
+							<li class="work__services-item">Борода</li>
+							<li class="work__services-item">Усы</li>
+						</ul>
+					</figcaption>
+				</figure>
+
+				<figure class="works__item work">
+					<div class="work__image-wrapper">
+						<img class="work__image" src="" alt="Винстон Синий">
+					</div>
+					<figcaption class="work__info">
+						<h3 class="work__title">Винстон Синий</h3>
+						<p class="work__descr">Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
+						<ul class="work__services-list">
+							<li class="work__services-item">Стрижка</li>
+						</ul>
+					</figcaption>
+				</figure>
+			</div>i<!-- /inner-content__wrapper -->
+		</div><!-- /works__gallery -->
+	</section><!-- /works -->
+
+	<section class="prices">
+		<div class="prices__wrapper">
+			<h2 class="prices__title">Прейскурант</h2>
+
+			<table class="prices__table price-list">
+				<tbody>
+					<tr class="price-list__item">
+						<td class="price-list__item-number">1</td>
+						<td class="price-list__item-service">Классическая стрижка</td>
+						<td class="price-list__item-addition">
+							<span class="price-list__paranhesis">(</span>
+							с мытьём головы
+							<span class="price-list__paranhesis">)</span>
+						</td>
+						<td class="price-list__item-price">1 500 руб.</td>
+					</tr>
+
+					<tr class="price-list__item">
+						<td class="price-list__item-number">2</td>
+						<td class="price-list__item-service">Современный вариант</td>
+						<td class="price-list__item-addition">
+							<span class="price-list__paranhesis">(</span>
+							с мытьём головы
+							<span class="price-list__paranhesis">)</span>
+						</td>
+						<td class="price-list__item-price">1 500 руб.</td>
+					</tr>
+
+					<tr class="price-list__item">
+						<td class="price-list__item-number">3</td>
+						<td class="price-list__item-service">Индивидуальный подход</td>
+						<td class="price-list__item-addition">
+							<span class="price-list__paranhesis">(</span>
+							с мытьём головы
+							<span class="price-list__paranhesis">)</span>
+						</td>
+						<td class="price-list__item-price">2 000 руб.</td>
+					</tr>
+
+					<tr class="price-list__item">
+						<td class="price-list__item-number">4</td>
+						<td class="price-list__item-service">Бритьё бороды</td>
+						<td class="price-list__item-addition">
+							<span class="price-list__paranhesis">(</span>
+							без мытья
+							<span class="price-list__paranhesis">)</span>
+						</td>
+						<td class="price-list__item-price">500 руб.</td>
+					</tr>
+
+					<tr class="price-list__item">
+						<td class="price-list__item-number">5</td>
+						<td class="price-list__item-service">Бритьё головы</td>
+						<td class="price-list__item-addition">
+							<span class="price-list__paranhesis">(</span>
+							с мытьём головы
+							<span class="price-list__paranhesis">)</span>
+						</td>
+						<td class="price-list__item-price">1 000 руб.</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="prices__discount discount">
+				<b class="discount__text">C 10:00 до 14:00 скидка 20%</b>
+			</div>
+		</div><!-- /prices__wrapper -->
+	</section><!-- /prices -->
+
+</main>
+<!-- /Main -->
+
+<!-- Footer -->
+<footer class="page-footer">
+	<div class="page-footer__wrapper">
+		<div class="page-footer__contacts contacts">
+			<b class="contacts__title">Барбершоп Бородинский</b>
+			<p class="contacts__text">
+				г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+				<a class="contacts__phone" href="tel:+78125556666" ><span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66</a>
+			</p>
+		</div><!-- /page-footer__contacts /contacts -->
+
+		<div class="page-footer__social social">
+			<b class="social__title">Давайте дружить!</b>
+			<ul class="social__list">
+				<li class="social__item">
+					<a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+				</li>
+			</ul>
+		</div><!-- /page-footer__social /social -->
+
+		<div class="page-footer__copyright copyright">
+			<b class="copyright__text">Разработано:</b>
+			<a class="button copyright__link" href="#">HTML Academy</a>
+		</div><!-- /page-footer__copyright /copyright -->
+	</div><!-- /page-footer__wrapper -->
+</footer>
+<!-- /Footer -->
+
+
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
