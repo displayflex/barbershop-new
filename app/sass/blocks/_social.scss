@@ -1,25 +1,37 @@
 .social {
+	&__title {
+		display: none;
+		text-align: center;
+	}
+
 	&__list {
 		@include list-reset;
-		font-size: 0;
 		display: flex;
 		justify-content: center;
+		font-size: 0;
 	}
 
 	&__item {
 		display: block;
-		border: 1px solid #3e3e3e;
-		height: 101px;
 		width: 33.33%;
+		height: 101px;
+		border: 1px solid #3e3e3e;
+		transition: 0.3s border-color ease;
+
+		&:hover,
+		&:focus {
+			border-color: #515151;
+		}
 	}
 
 	&__link {
-		text-decoration: none;
-		color: #fff;
 		display: block;
 		height: 100%;
+		color: #fff;
+		text-decoration: none;
 		background-repeat: no-repeat;
 		background-position: center;
+		transition: 0.3s all ease;
 
 		&--vkontakte {
 			background-image: url("../img/social-vk.svg");
@@ -34,6 +46,51 @@
 		&--instagram {
 			background-image: url("../img/social-instagram.svg");
 			background-size: 36px auto;
+		}
+
+		&:hover,
+		&:focus {
+			cursor: pointer;
+		}
+
+		&:active {
+			color: rgba(#fff, 0.3);
+			background-color: #252525;
+			border-color: #252525;
+		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.social {
+		&__title {
+			display: block;
+			margin-bottom: 11px;
+			font-weight: 400;
+		}
+
+		&__item {
+			width: 48px;
+			height: 48px;
+			margin-right: 6px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+
+		&__link {
+			&--vkontakte {
+				background-size: 26px auto;
+			}
+
+			&--facebook {
+				background-size: 11px auto;
+			}
+
+			&--instagram {
+				background-size: 19px auto;
+			}
 		}
 	}
 }
