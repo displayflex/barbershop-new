@@ -1,0 +1,107 @@
+.work {
+	position: relative;
+
+	&__image-wrapper {
+		height: 176px;
+		overflow: hidden;
+		background-color: #e5ddd5;
+	}
+
+	&--best {
+		.work__image-wrapper {
+			height: 480px;
+		}
+	}
+
+	&__label {
+		position: absolute;
+		top: 401px;
+		left: 0;
+		display: block;
+		box-sizing: border-box;
+		min-width: 161px;
+		height: 50px;
+		padding-left: 26px;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 50px;
+		text-align: left;
+		color: #fff;
+		text-transform: uppercase;
+		background-color: $brown;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			right: -15px;
+			display: block;
+			width: 0;
+			height: 0;
+			border-top: 25px solid $brown;
+			border-right: 8px solid transparent;
+			border-bottom: 25px solid $brown;
+			border-left: 8px solid $brown;
+		}
+	}
+
+	&__info {
+		margin-bottom: 20px;
+		padding-top: 20px;
+		padding-bottom: 4px;
+		border: 1px solid #e5ddd5;
+		border-top: none;
+	}
+
+	&__title {
+		margin: 0 0 15px;
+		padding-right: 20px;
+		padding-left: 20px;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 1.13;
+	}
+
+	&__descr {
+		margin: 0 0 16px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	&__services-list {
+		@include list-reset;
+
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__services-item {
+		box-sizing: border-box;
+		width: 139px;
+		margin-bottom: 15px;
+		padding-left: 20px;
+		font-size: 16px;
+		line-height: 1.69;
+		text-align: center;
+		text-transform: uppercase;
+		background-repeat: no-repeat;
+
+		&--scissors {
+			background-image: url("../img/service-scissors.svg");
+			background-position: 18px 2px;
+			background-size: 23px 20px;
+		}
+
+		&--beard {
+			background-image: url("../img/service-beard.svg");
+			background-position: 21px 0;
+			background-size: 22px 21px;
+		}
+
+		&--mustache {
+			background-image: url("../img/service-mustache.svg");
+			background-position: 10px 4px;
+			background-size: 45px 15px;
+		}
+	}
+}

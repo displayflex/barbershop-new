@@ -63,9 +63,9 @@
 		width: 0;
 		height: 0;
 		border-top: 34px solid #242424;
-		border-right: calc(50vw) solid #f8f5f2;
+		border-right: calc(50vw) solid $bg-lightgrey;
 		border-bottom: none;
-		border-left: calc(50vw) solid #f8f5f2;
+		border-left: calc(50vw) solid $bg-lightgrey;
 	}
 }
 
