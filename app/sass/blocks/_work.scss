@@ -1,10 +1,16 @@
 .work {
 	position: relative;
+	max-width: 450px;
 
 	&__image-wrapper {
 		height: 176px;
 		overflow: hidden;
 		background-color: #e5ddd5;
+		text-align: center;
+	}
+
+	&__image {
+		width: 100%;
 	}
 
 	&--best {

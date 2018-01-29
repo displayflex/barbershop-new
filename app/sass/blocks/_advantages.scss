@@ -1,7 +1,7 @@
 .advantages {
+	overflow: hidden;
 	text-align: center;
 	background-color: #242424;
-	overflow: hidden;
 
 	&__wrapper {
 		padding-bottom: 13px;
@@ -9,6 +9,7 @@
 
 	&__list {
 		@include list-reset;
+
 		width: 72%;
 		margin: 0 auto;
 	}
@@ -43,29 +44,22 @@
 	&__title {
 		margin: 0;
 		margin-bottom: 15px;
+		font-weight: 700;
 		font-size: 30px;
 		line-height: 1;
 		text-transform: uppercase;
-		font-weight: 700;
 	}
 
 	&__description {
 		margin: 0;
 		margin-bottom: 30px;
+		font-weight: 400;
 		font-size: 20px;
 		line-height: 1.35;
-		font-weight: 400;
 	}
 
 	&::after {
-		content: "";
-		display: block;
-		width: 0;
-		height: 0;
-		border-top: 34px solid #242424;
-		border-right: calc(50vw) solid $bg-lightgrey;
-		border-bottom: none;
-		border-left: calc(50vw) solid $bg-lightgrey;
+		@include triangle(34px, #242424, down, $bg-lightgrey, calc(50vw));
 	}
 }
 

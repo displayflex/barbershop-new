@@ -107,7 +107,8 @@
         "define-mixin",
         "include",
         "content",
-        "rules"
+        "rules",
+        "if"
       ]
     }],
     "at-rule-no-vendor-prefix": true,

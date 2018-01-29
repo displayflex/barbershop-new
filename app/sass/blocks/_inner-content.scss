@@ -3,7 +3,7 @@
 	background-color: $bg-lightgrey;
 
 	&__wrapper {
-		padding: 31px 20px;
+		padding: 31px 20px 14px;
 	}
 
 	&__header {
@@ -21,6 +21,10 @@
 
 	&__link {
 		display: none;
+	}
+
+	&::after {
+		@include triangle(34px, #f8f5f2, down, $bg-darkgrey, calc(50vw));
 	}
 }
 

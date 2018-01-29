@@ -84,14 +84,7 @@
 	}
 
 	&::after {
-		content: "";
-		display: block;
-		width: 0;
-		height: 0;
-		border-top: 34px solid #f8f5f2;
-		border-right: calc(50vw) solid #292929;
-		border-bottom: none;
-		border-left: calc(50vw) solid #292929;
+		@include triangle(34px, #f8f5f2, down, #292929, calc(50vw));
 	}
 }
 

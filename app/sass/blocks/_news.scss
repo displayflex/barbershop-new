@@ -10,6 +10,7 @@
 
 	&__list {
 		@include list-reset;
+
 		max-width: 500px;
 		margin: 0 auto;
 	}
@@ -171,8 +172,8 @@
 			position: absolute;
 			top: 40px;
 			right: 0;
-			min-width: 160px;
 			box-sizing: border-box;
+			min-width: 160px;
 		}
 	}
 }

@@ -1,0 +1,30 @@
+.prices {
+	&__wrapper {
+		max-width: 450px;
+		margin-right: auto;
+		margin-left: auto;
+		padding: 37px 20px 19px;
+	}
+
+	&__title {
+		margin: 0;
+		margin-bottom: 20px;
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 1;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	&__table {
+		margin-bottom: 22px;
+	}
+
+	&__discount {
+		margin: 0 auto;
+	}
+
+	&::after {
+		@include triangle(34px, $bg-darkgrey, down, #292929, calc(50vw));
+	}
+}

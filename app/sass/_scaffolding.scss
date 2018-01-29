@@ -49,3 +49,12 @@ img {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 }
+
+h1,
+h2,
+h3,
+p,
+b {
+	overflow: hidden;
+	text-overflow: ellipsis;
+} //???
