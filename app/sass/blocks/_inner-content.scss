@@ -3,6 +3,8 @@
 	background-color: $bg-lightgrey;
 
 	&__wrapper {
+		max-width: 450px;
+		margin: 0 auto;
 		padding: 31px 20px 14px;
 	}
 
@@ -24,7 +26,54 @@
 	}
 
 	&::after {
-		@include triangle(34px, #f8f5f2, down, $bg-darkgrey, calc(50vw));
+		@include triangle(34px, $bg-lightgrey, down, $bg-darkgrey, calc(50vw));
 	}
 }
 
+@media (min-width: $tablet-width) {
+	.inner-content {
+		&__wrapper {
+			max-width: 850px;
+			padding: 53px 64px 21px;
+		}
+
+		&__header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 38px;
+		}
+
+		&__title {
+			font-size: 40px;
+			text-align: left;
+		}
+
+		&__link {
+			display: inline-block;
+			box-sizing: border-box;
+			min-width: 160px;
+		}
+
+		&::after {
+			border-top-width: 41px;
+		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.inner-content {
+		&__wrapper {
+			max-width: 1200px;
+			padding: 53px 120px 47px;
+		}
+
+		&__header {
+			margin-bottom: 79px;
+		}
+
+		&::after {
+			display: none;
+		}
+	}
+}

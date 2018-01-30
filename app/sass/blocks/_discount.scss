@@ -2,6 +2,7 @@
 	display: flex;
 	align-items: center;
 	box-sizing: border-box;
+	max-width: 350px;
 	min-height: 91px;
 	padding: 17px 20px 17px 112px;
 	background-image: url("../img/discount-clock.svg");
@@ -9,11 +10,47 @@
 	background-position: 20px center;
 	background-size: 58px 57px;
 	border: 1px solid #484848;
-	max-width: 350px;
 
 	&__text {
 		font-weight: 400;
 		font-size: 20px;
 		line-height: 1.35;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.discount {
+		width: 100%;
+		max-width: 100%;
+		min-height: 113px;
+		background-position: 26px center;
+		background-size: 72px auto;
+
+		&__text {
+			display: block;
+			width: 100%;
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 1;
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.discount {
+		width: 269px;
+		max-width: 269px;
+		padding: 197px 40px 10px;
+		background-position: center 34px;
+		background-size: 142px auto;
+
+		&__text {
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 1.35;
+			text-transform: none;
+		}
 	}
 }

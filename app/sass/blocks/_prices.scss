@@ -28,3 +28,52 @@
 		@include triangle(34px, $bg-darkgrey, down, #292929, calc(50vw));
 	}
 }
+
+@media (min-width: $tablet-width) {
+	.prices {
+		&__wrapper {
+			max-width: 850px;
+			padding: 44px 64px 60px;
+		}
+
+		&__title {
+			margin-bottom: 48px;
+			font-size: 40px;
+			text-align: left;
+		}
+
+		&__table {
+			margin-bottom: 9px;
+		}
+
+		&::after {
+			display: none;
+		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.prices {
+		&__wrapper {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: flex-start;
+			max-width: 1200px;
+			padding: 78px 120px 88px;
+		}
+
+		&__title {
+			width: 100%;
+		}
+
+		&__table {
+			margin-bottom: 0;
+		}
+
+		&__discount {
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+}

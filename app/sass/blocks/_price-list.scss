@@ -26,6 +26,52 @@
 	&__item-addition {
 		order: 1;
 		width: 100%;
-		white-space: normal;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.price-list {
+		border-collapse: collapse;
+
+		td {
+			box-sizing: border-box;
+			padding: 13px 20px;
+			border: 1px solid #484848;
+		}
+
+		&__item {
+			display: table-row;
+			margin-bottom: 0;
+		}
+
+		&__item-number {
+			display: table-cell;
+			width: 72px;
+			text-align: center;
+			color: rgba(#fff, 0.3);
+		}
+
+		&__item-addition {
+			width: auto;
+			min-width: 160px;
+		}
+
+		&__paranhesis {
+			display: none;
+		}
+
+		&__item-price {
+			width: 160px;
+		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.price-list {
+		width: 65.62%;
+
+		&__item-price {
+			width: 150px;
+		}
 	}
 }
