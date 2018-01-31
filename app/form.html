@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Барбершоп «Бородинский»</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="page-header">
+	<a class="page-header__logo page-header__logo--inner">
+		<picture>
+			<source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+			<source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+			<img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
+		</picture>
+	</a>
+
+	<nav class="main-nav main-nav--closed main-nav--no-js">
+		<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+		<div class="main-nav__wrapper">
+			<ul class="main-nav__list site-list">
+				<li class="site-list__item">
+					<a href="index.html">Главная</a>
+				</li>
+				<li class="site-list__item">
+					<a href="works.html">Наши работы</a>
+				</li>
+				<li class="site-list__item site-list__item--active">
+					<a>Записаться</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#">Контакты</a>
+				</li>
+				<li class="site-list__item">
+					<a href="#">HTML Academy</a>
+				</li>
+			</ul>
+
+			<ul class="main-nav__list user-list">
+				<li class="user-list__item">
+					<a class="user-list__login" href="login.html">
+						<svg class="user-list__login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+						<g>
+							<path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M15,0h-2h-3H8C7.4,0,7,0.4,7,1c0,0.6,0.4,1,1,1h2h3h1v1v10v1h-3H8
+								c-0.6,0-1,0.4-1,1s0.4,1,1,1h3h2h2c0.6,0,1-0.4,1-1V1C16,0.4,15.6,0,15,0z"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" fill="none" d="M7,12l4-4L7,4v3H0.9C0.4,7,0,7.4,0,8c0,0.6,0.4,1,0.9,1H7V12z"/>
+						</g>
+						</svg>
+
+						Войти
+					</a>
+				</li>
+			</ul>
+		</div><!-- /main-nav__wrapper -->
+	</nav>
+</header>
+<!-- /Header -->
+
+<!-- Main -->
+<main class="inner-page">
+	<section class="inner-content">
+		<div class="inner-content__wrapper">
+			<header class="inner-content__header">
+				<h1 class="inner-content__title">Запись на стрижку</h1>
+				<a class="button inner-content__link" href="index.html" >На главную</a>
+			</header>
+
+			<form class="main-form" method="POST" action="#">
+				<fieldset class="main-form__field">
+					<legend class="main-form__legend visually-hidden">Ваши личные данные</legend>
+					<p class="main-form__item">
+						<label class="visually-hidden" for="main-form__name">Ваше имя</label>
+						<input class="main-form__name" id="main-form__name" type="text" name="name" placeholder="Имя">
+					</p>
+					<p class="main-form__item">
+						<label class="visually-hidden" for="main-form__surname">Ваша фамилия</label>
+						<input class="main-form__surname" id="main-form__surname" type="text" name="surname" placeholder="Фамилия">
+					</p>
+					<p class="main-form__item">
+						<label class="visually-hidden" for="main-form__middle-name">Ваше отчество</label>
+						<input class="main-form__middle-name" id="main-form__middle-name" type="text" name="middle-name" placeholder="Отчество">
+					</p>
+
+					<p class="main-form__item">
+						<label class="visually-hidden" for="main-form__phone">Ваш контактный телефон</label>
+						<input class="main-form__phone" id="main-form__phone" type="tel" name="phone" placeholder="Контактный телефон">
+					</p>
+					<p class="main-form__item">
+						<label class="visually-hidden" for="main-form__email">Ваш контактный e-mail</label>
+						<input class="main-form__email" id="main-form__email" type="email" name="phone" placeholder="Контактный e-mail">
+					</p>
+
+					<p class="main-form__item">
+						<label class="visually-hidden" for="main-form__textarea">Дополнительная информация для мастера</label>
+						<textarea class="main-form__textarea" id="main-form__textarea" name="textarea" placeholder="Доп. информация для мастера"></textarea>
+					</p>
+				</fieldset>
+
+				<fieldset class="main-form__field">
+					<legend class="main-form__legend">Выберите модель бороды:</legend>
+					<ul class="main-form__beard-list">
+							<li class="main-form__beard-list-option">
+								<label class="main-form__radio-label" for="main-form__radio">адмирал</label>
+								<input class="main-form__radio main-form__radio--admiral" id="main-form__radio" type="radio" name="admiral" checked>
+							</li>
+
+							<li class="main-form__beard-list-option">
+								<label class="main-form__radio-label" for="main-form__radio">лесоруб</label>
+								<input class="main-form__radio main-form__radio--lumberjack" id="main-form__radio" type="radio" name="lumberjack">
+							</li>
+
+							<li class="main-form__beard-list-option">
+								<label class="main-form__radio-label" for="main-form__radio">полярник</label>
+								<input class="main-form__radio main-form__radio--polar-explorer" id="main-form__radio" type="radio" name="polar-explorer">
+							</li>
+
+							<li class="main-form__beard-list-option">
+								<label class="main-form__radio-label" for="main-form__radio">боярин</label>
+								<input class="main-form__radio main-form__radio--boyar" id="main-form__radio" type="radio" name="boyar">
+							</li>
+
+							<li class="main-form__beard-list-option">
+								<label class="main-form__radio-label" for="main-form__radio">мудрец</label>
+								<input class="main-form__radio main-form__radio--sage" id="main-form__radio" type="radio" name="sage">
+							</li>
+						</ul>
+				</fieldset>
+
+				<fieldset class="main-form__field">
+					<legend class="main-form__legend">Дополнительные услуги:</legend>
+					<ul class="main-form__services-list">
+							<li class="main-form__services-list-option">
+								<label class="main-form__checkbox-label" for="main-form__checkbox">Подкрасить бороду</label>
+								<input class="main-form__checkbox" id="main-form__checkbox" type="checkbox" name="beard-dyeing" checked>
+							</li>
+
+							<li class="main-form__services-list-option">
+								<label class="main-form__checkbox-label" for="main-form__checkbox">Накрутить усы</label>
+								<input class="main-form__checkbox" id="main-form__checkbox" type="checkbox" name="whiskers-cheat">
+							</li>
+
+							<li class="main-form__services-list-option">
+								<label class="main-form__checkbox-label" for="main-form__checkbox">Причесать бороду</label>
+								<input class="main-form__checkbox" id="main-form__checkbox" type="checkbox" name="beard-combing">
+							</li>
+
+							<li class="main-form__services-list-option">
+								<label class="main-form__checkbox-label" for="main-form__checkbox">Подровнять виски</label>
+								<input class="main-form__checkbox" id="main-form__checkbox" type="checkbox" name="temples-trimming">
+							</li>
+
+							<li class="main-form__services-list-option">
+								<label class="main-form__checkbox-label" for="main-form__checkbox">Убрать седину</label>
+								<input class="main-form__checkbox" id="main-form__checkbox" type="checkbox" name="graying-remove">
+							</li>
+
+							<li class="main-form__services-list-option">
+								<label class="main-form__checkbox-label" for="main-form__checkbox">Отполировать лысину</label>
+								<input class="main-form__checkbox" id="main-form__checkbox" type="checkbox" name="bald-head-polishing">
+							</li>
+						</ul>
+				</fieldset>
+				<button class="button main-form__submit" type="submit">Отправить заявку</button>
+			</form>
+		</div><!-- /inner-content__wrapper -->
+	</section><!-- /works -->
+</main>
+<!-- /Main -->
+
+<!-- Footer -->
+<footer class="page-footer">
+	<div class="page-footer__wrapper">
+		<div class="page-footer__contacts contacts">
+			<b class="contacts__title">Барбершоп Бородинский</b>
+			<p class="contacts__text">
+				г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+				<a class="contacts__phone" href="tel:+78125556666" ><span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66</a>
+			</p>
+		</div><!-- /page-footer__contacts /contacts -->
+
+		<div class="page-footer__social social">
+			<b class="social__title">Давайте дружить!</b>
+			<ul class="social__list">
+				<li class="social__item">
+					<a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+				</li>
+				<li class="social__item">
+					<a class="social__link social__link--instagram" href="#">Мы в Инстаграме</a>
+				</li>
+			</ul>
+		</div><!-- /page-footer__social /social -->
+
+		<div class="page-footer__copyright copyright">
+			<b class="copyright__text">Разработано:</b>
+			<a class="button copyright__link" href="#">HTML Academy</a>
+		</div><!-- /page-footer__copyright /copyright -->
+	</div><!-- /page-footer__wrapper -->
+</footer>
+<!-- /Footer -->
+
+
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
