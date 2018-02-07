@@ -70,102 +70,108 @@
 				<a class="button inner-content__link" href="index.html" >На главную</a>
 			</header>
 
-			<form class="main-form" method="POST" action="#">
-				<fieldset class="main-form__field">
-					<legend class="main-form__legend visually-hidden">Ваши личные данные</legend>
-					<p class="main-form__item">
-						<label class="visually-hidden" for="main-form__name">Ваше имя</label>
-						<input class="main-form__name" id="main-form__name" type="text" name="name" placeholder="Имя">
-					</p>
-					<p class="main-form__item">
-						<label class="visually-hidden" for="main-form__surname">Ваша фамилия</label>
-						<input class="main-form__surname" id="main-form__surname" type="text" name="surname" placeholder="Фамилия">
-					</p>
-					<p class="main-form__item">
-						<label class="visually-hidden" for="main-form__middle-name">Ваше отчество</label>
-						<input class="main-form__middle-name" id="main-form__middle-name" type="text" name="middle-name" placeholder="Отчество">
-					</p>
+			<form class="inner-content__form order-form" method="POST" action="#">
+				<fieldset class="order-form__field">
+					<legend class="order-form__legend visually-hidden">Ваши личные данные</legend>
+					<div class="order-form__subgroup">
+						<p class="order-form__item">
+							<label class="visually-hidden" for="order-form__name">Ваше имя</label>
+							<input class="text-input order-form__name" id="order-form__name" type="text" name="name" placeholder="Имя">
+						</p>
+						<p class="order-form__item">
+							<label class="visually-hidden" for="order-form__surname">Ваша фамилия</label>
+							<input class="text-input order-form__surname" id="order-form__surname" type="text" name="surname" placeholder="Фамилия">
+						</p>
+						<p class="order-form__item">
+							<label class="visually-hidden" for="order-form__middle-name">Ваше отчество</label>
+							<input class="text-input order-form__middle-name" id="order-form__middle-name" type="text" name="middle-name" placeholder="Отчество">
+						</p>
+					</div><!-- /order-form__subgroup -->
 
-					<p class="main-form__item">
-						<label class="visually-hidden" for="main-form__phone">Ваш контактный телефон</label>
-						<input class="main-form__phone" id="main-form__phone" type="tel" name="phone" placeholder="Контактный телефон">
-					</p>
-					<p class="main-form__item">
-						<label class="visually-hidden" for="main-form__email">Ваш контактный e-mail</label>
-						<input class="main-form__email" id="main-form__email" type="email" name="phone" placeholder="Контактный e-mail">
-					</p>
+					<div class="order-form__subgroup">
+						<p class="order-form__item">
+							<label class="visually-hidden" for="order-form__phone">Ваш контактный телефон</label>
+							<input class="text-input order-form__phone" id="order-form__phone" type="tel" name="phone" placeholder="Контактный телефон">
+						</p>
+						<p class="order-form__item">
+							<label class="visually-hidden" for="order-form__email">Ваш контактный e-mail</label>
+							<input class="text-input order-form__email" id="order-form__email" type="email" name="phone" placeholder="Контактный e-mail">
+						</p>
+					</div><!-- /order-form__subgroup -->
 
-					<p class="main-form__item">
-						<label class="visually-hidden" for="main-form__textarea">Дополнительная информация для мастера</label>
-						<textarea class="main-form__textarea" id="main-form__textarea" name="textarea" placeholder="Доп. информация для мастера"></textarea>
-					</p>
+					<div class="order-form__subgroup">
+						<p class="order-form__item">
+							<label class="visually-hidden" for="order-form__textarea">Дополнительная информация для мастера</label>
+							<textarea class="text-input order-form__textarea" id="order-form__textarea" name="textarea" placeholder="Доп. информация для мастера"></textarea>
+						</p>
+					</div><!-- /order-form__subgroup -->
 				</fieldset>
 
-				<fieldset class="main-form__field">
-					<legend class="main-form__legend">Выберите модель бороды:</legend>
-					<ul class="main-form__beard-list">
-							<li class="main-form__beard-list-option">
-								<label class="main-form__radio-label" for="main-form__radio">адмирал</label>
-								<input class="main-form__radio main-form__radio--admiral" id="main-form__radio" type="radio" name="admiral" checked>
+				<fieldset class="order-form__field">
+					<legend class="order-form__legend">Выберите модель бороды:</legend>
+					<ul class="order-form__beard-list">
+							<li class="order-form__beard-option order-form__beard-option--admiral">
+								<input class="order-form__radio" id="admiral" type="radio" name="beard-list" checked>
+								<label class="order-form__radio-label" for="admiral">адмирал</label>
 							</li>
 
-							<li class="main-form__beard-list-option">
-								<label class="main-form__radio-label" for="main-form__radio">лесоруб</label>
-								<input class="main-form__radio main-form__radio--lumberjack" id="main-form__radio" type="radio" name="lumberjack">
+							<li class="order-form__beard-option order-form__beard-option--lumberjack">
+								<input class="order-form__radio" id="lumberjack" type="radio" name="beard-list">
+								<label class="order-form__radio-label" for="lumberjack">лесоруб</label>
 							</li>
 
-							<li class="main-form__beard-list-option">
-								<label class="main-form__radio-label" for="main-form__radio">полярник</label>
-								<input class="main-form__radio main-form__radio--polar-explorer" id="main-form__radio" type="radio" name="polar-explorer">
+							<li class="order-form__beard-option order-form__beard-option--explorer">
+								<input class="order-form__radio" id="polar-explorer" type="radio" name="beard-list">
+								<label class="order-form__radio-label" for="polar-explorer">полярник</label>
 							</li>
 
-							<li class="main-form__beard-list-option">
-								<label class="main-form__radio-label" for="main-form__radio">боярин</label>
-								<input class="main-form__radio main-form__radio--boyar" id="main-form__radio" type="radio" name="boyar">
+							<li class="order-form__beard-option order-form__beard-option--boyar">
+								<input class="order-form__radio" id="boyar" type="radio" name="beard-list">
+								<label class="order-form__radio-label" for="boyar">боярин</label>
 							</li>
 
-							<li class="main-form__beard-list-option">
-								<label class="main-form__radio-label" for="main-form__radio">мудрец</label>
-								<input class="main-form__radio main-form__radio--sage" id="main-form__radio" type="radio" name="sage">
+							<li class="order-form__beard-option order-form__beard-option--sage">
+								<input class="order-form__radio" id="sage" type="radio" name="beard-list">
+								<label class="order-form__radio-label" for="sage">мудрец</label>
 							</li>
 						</ul>
 				</fieldset>
 
-				<fieldset class="main-form__field">
-					<legend class="main-form__legend">Дополнительные услуги:</legend>
-					<ul class="main-form__services-list">
-							<li class="main-form__services-list-option">
-								<label class="main-form__checkbox-label" for="main-form__checkbox">Подкрасить бороду</label>
-								<input class="main-form__checkbox" id="main-form__checkbox" type="checkbox" name="beard-dyeing" checked>
+				<fieldset class="order-form__field">
+					<legend class="order-form__legend">Дополнительные услуги:</legend>
+					<ul class="order-form__services-list">
+							<li class="order-form__services-option">
+								<input class="order-form__checkbox" id="beard-dyeing" type="checkbox" name="beard-dyeing" checked>
+								<label class="order-form__checkbox-label" for="beard-dyeing">Подкрасить бороду</label>
 							</li>
 
-							<li class="main-form__services-list-option">
-								<label class="main-form__checkbox-label" for="main-form__checkbox">Накрутить усы</label>
-								<input class="main-form__checkbox" id="main-form__checkbox" type="checkbox" name="whiskers-cheat">
+							<li class="order-form__services-option">
+								<input class="order-form__checkbox" id="whiskers-cheat" type="checkbox" name="whiskers-cheat">
+								<label class="order-form__checkbox-label" for="whiskers-cheat">Накрутить усы</label>
 							</li>
 
-							<li class="main-form__services-list-option">
-								<label class="main-form__checkbox-label" for="main-form__checkbox">Причесать бороду</label>
-								<input class="main-form__checkbox" id="main-form__checkbox" type="checkbox" name="beard-combing">
+							<li class="order-form__services-option">
+								<input class="order-form__checkbox" id="beard-combing" type="checkbox" name="beard-combing">
+								<label class="order-form__checkbox-label" for="beard-combing">Причесать бороду</label>
 							</li>
 
-							<li class="main-form__services-list-option">
-								<label class="main-form__checkbox-label" for="main-form__checkbox">Подровнять виски</label>
-								<input class="main-form__checkbox" id="main-form__checkbox" type="checkbox" name="temples-trimming">
+							<li class="order-form__services-option">
+								<input class="order-form__checkbox" id="temples-trimming" type="checkbox" name="temples-trimming">
+								<label class="order-form__checkbox-label" for="temples-trimming">Подровнять виски</label>
 							</li>
 
-							<li class="main-form__services-list-option">
-								<label class="main-form__checkbox-label" for="main-form__checkbox">Убрать седину</label>
-								<input class="main-form__checkbox" id="main-form__checkbox" type="checkbox" name="graying-remove">
+							<li class="order-form__services-option">
+								<input class="order-form__checkbox" id="graying-remove" type="checkbox" name="graying-remove">
+								<label class="order-form__checkbox-label" for="graying-remove">Убрать седину</label>
 							</li>
 
-							<li class="main-form__services-list-option">
-								<label class="main-form__checkbox-label" for="main-form__checkbox">Отполировать лысину</label>
-								<input class="main-form__checkbox" id="main-form__checkbox" type="checkbox" name="bald-head-polishing">
+							<li class="order-form__services-option">
+								<input class="order-form__checkbox" id="bald-head-polishing" type="checkbox" name="bald-head-polishing">
+								<label class="order-form__checkbox-label" for="bald-head-polishing">Отполировать лысину</label>
 							</li>
 						</ul>
 				</fieldset>
-				<button class="button main-form__submit" type="submit">Отправить заявку</button>
+				<button class="button order-form__submit" type="submit">Отправить заявку</button>
 			</form>
 		</div><!-- /inner-content__wrapper -->
 	</section><!-- /works -->
