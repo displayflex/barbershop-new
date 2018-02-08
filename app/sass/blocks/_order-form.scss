@@ -5,7 +5,7 @@
 		border: none;
 		margin: 0;
 		padding: 0;
-		margin-bottom: 20px;
+		margin-bottom: 39px;
 	}
 
 	&__legend {
@@ -13,20 +13,29 @@
 		line-height: 1.35;
 		text-transform: uppercase;
 		text-align: center;
-		margin-bottom: 20px;
+		margin-bottom: 33px;
 	}
 
 	&__subgroup {
-		margin-bottom: 30px;
+		margin-bottom: 31px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	&__item {
 		margin-top: 0;
 		margin-bottom: 5px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	&__textarea {
 		resize: none;
+		min-height: 112px;
 	}
 
 	&__beard-list,
@@ -39,38 +48,38 @@
 	&__beard-option {
 		width: 33%; //??? + min-width???
 		text-align: center;
-		padding-bottom: 110px;
-		margin-bottom: 20px;
+		padding-bottom: 114px;
+		margin-bottom: 9px;
 		background-repeat: no-repeat;
 
 		&--admiral {
 			background-image: url("../img/service-beard.svg");
 			background-size: 52px 49px;
-			background-position: center bottom;
+			background-position: bottom 52px center;
 		}
 
 		&--lumberjack {
 			background-image: url("../img/beard-2.svg");
 			background-size: 58px 68px;
-			background-position: center bottom;
+			background-position: bottom 34px center;
 		}
 
 		&--explorer {
 			background-image: url("../img/beard-3.svg");
 			background-size: 62px 79px;
-			background-position: center bottom;
+			background-position: bottom 21px center;
 		}
 
 		&--boyar {
 			background-image: url("../img/beard-4.svg");
 			background-size: 57px 98px;
-			background-position: center bottom;
+			background-position: bottom 7px center;
 		}
 
 		&--sage {
 			background-image: url("../img/beard-5.svg");
 			background-size: 45px 105px;
-			background-position: center bottom;
+			background-position: bottom center;
 		}
 	}
 
@@ -79,11 +88,16 @@
 		text-align: left;
 		margin-bottom: 20px;
 		min-height: 36px; //?
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 
 	&__submit {
 		box-sizing: border-box;
-		min-width: 280px;
+		margin-bottom: 24px;
+		width: 100%;
 		background-color: $brown;
 		color: #fff;
 		font-size: 18px;
@@ -91,22 +105,26 @@
 		line-height: 1.33;
 		text-transform: uppercase;
 		font-family: "PT Sans Narrow", "Arial", sans-serif;
+
+		&:hover,
+		&:focus {
+			background-color: #6a4d38;
+		}
+
+		&:active {
+			color: rgba(#fff, 0.3);
+		}
 	}
 }
 
+// Стилизация радио кнопок
 .order-form__radio-label {
-	display: block; //??
+	display: block;
 	position: relative;
-	padding-top: 70px;
+	padding-top: 64px;
 	cursor: pointer;
 	font-size: 18px;
 	line-height: 1.33;
-	//text-align: center;
-	//transition: color 0.2s;
-
-	// &:hover {
-	// 	color: $hover-btn;
-	// }
 }
 
 .order-form__radio-label::before {
@@ -116,12 +134,26 @@
 	top: 0;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 52px;
-	height: 52px;
+	width: 51px;
+	height: 51px;
 	border: 1px solid #e5ddd5;
 	background-color: #fff;
 	border-radius: 50%;
 	box-sizing: border-box;
+	transition: all 0.2s;
+}
+
+.order-form__radio-label:hover,
+.order-form__radio-label:focus {
+	&::before {
+		border-color: #d5c9bd;
+	}
+}
+
+.order-form__radio-label:active {
+	&::before {
+		background-color: #d5c9bd;
+	}
 }
 
 .order-form__radio,
@@ -144,24 +176,24 @@
 	background-color: #fff;
 	border-radius: 50%;
 	box-sizing: border-box;
+	transition: border-color 0.2s;
 }
 
+.order-form__radio:checked:hover + .order-form__radio-label::after,
+.order-form__radio:checked:focus + .order-form__radio-label::after {
+	border-color: #d5c9bd;
+}
+
+// Стилизация чекбоксов
 .order-form__checkbox-label {
-	// display: block; //??
 	min-height: 36px;
-	display: flex; //?
+	display: flex;
 	align-items: center;
 	position: relative;
 	padding-left: 60px;
 	cursor: pointer;
 	font-size: 18px;
 	line-height: 1.66;
-	//text-align: left;
-	//transition: color 0.2s;
-
-	// &:hover {
-	// 	color: $hover-btn;
-	// }
 }
 
 .order-form__checkbox-label::before {
@@ -174,12 +206,26 @@
 	border: 1px solid #e5ddd5;
 	background-color: #fff;
 	box-sizing: border-box;
+	transition: all 0.2s;
+}
+
+.order-form__checkbox-label:hover,
+.order-form__checkbox-label:focus {
+	&::before {
+		border-color: #d5c9bd;
+	}
+}
+
+.order-form__checkbox-label:active {
+	&::before {
+		background-color: #d5c9bd;
+	}
 }
 
 .order-form__checkbox:checked + .order-form__checkbox-label::after {
 	content: "";
 	position: absolute;
-	top: 7px;
+	top: 10px;
 	left: 7px;
 	width: 22px;
 	height: 10px;

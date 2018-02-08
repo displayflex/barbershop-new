@@ -28,6 +28,13 @@
 	&::after {
 		@include triangle(34px, $bg-lightgrey, down, $bg-darkgrey, calc(50vw));
 	}
+
+	&--dark-triangle {
+		&::after {
+			border-left-color: #292929;
+			border-right-color: #292929;
+		}
+	}
 }
 
 @media (min-width: $tablet-width) {
