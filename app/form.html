@@ -63,9 +63,9 @@
 
 <!-- Main -->
 <main class="inner-page">
-	<section class="inner-content inner-content--dark-triangle">
+	<section class="inner-content inner-content--dark-triangle inner-content--no-triangle">
 		<div class="inner-content__wrapper">
-			<header class="inner-content__header">
+			<header class="inner-content__header inner-content__header--bigger-margin">
 				<h1 class="inner-content__title">Запись на стрижку</h1>
 				<a class="button inner-content__link" href="index.html" >На главную</a>
 			</header>
@@ -73,27 +73,27 @@
 			<form class="inner-content__form order-form" method="POST" action="#">
 				<fieldset class="order-form__field">
 					<legend class="order-form__legend visually-hidden">Ваши личные данные</legend>
-					<div class="order-form__subgroup">
-						<p class="order-form__item">
+					<div class="order-form__subgroup order-form__subgroup--name">
+						<p class="order-form__item order-form__item--surname">
 							<label class="visually-hidden" for="order-form__surname">Ваша фамилия</label>
-							<input class="text-input order-form__surname" id="order-form__surname" type="text" name="surname" placeholder="Фамилия">
+							<input class="text-input" id="order-form__surname" type="text" name="surname" placeholder="Фамилия">
 						</p>
-						<p class="order-form__item">
+						<p class="order-form__item order-form__item--name">
 							<label class="visually-hidden" for="order-form__name">Ваше имя</label>
-							<input class="text-input order-form__name" id="order-form__name" type="text" name="name" placeholder="Имя">
+							<input class="text-input" id="order-form__name" type="text" name="name" placeholder="Имя">
 						</p>
-						<p class="order-form__item">
+						<p class="order-form__item order-form__item--middle-name">
 							<label class="visually-hidden" for="order-form__middle-name">Ваше отчество</label>
-							<input class="text-input order-form__middle-name" id="order-form__middle-name" type="text" name="middle-name" placeholder="Отчество">
+							<input class="text-input" id="order-form__middle-name" type="text" name="middle-name" placeholder="Отчество">
 						</p>
 					</div><!-- /order-form__subgroup -->
 
-					<div class="order-form__subgroup">
-						<p class="order-form__item">
+					<div class="order-form__subgroup order-form__subgroup--contact">
+						<p class="order-form__item order-form__item--contact">
 							<label class="visually-hidden" for="order-form__phone">Ваш контактный телефон</label>
 							<input class="text-input order-form__phone" id="order-form__phone" type="tel" name="phone" placeholder="Контактный телефон">
 						</p>
-						<p class="order-form__item">
+						<p class="order-form__item order-form__item--contact">
 							<label class="visually-hidden" for="order-form__email">Ваш контактный e-mail</label>
 							<input class="text-input order-form__email" id="order-form__email" type="email" name="phone" placeholder="Контактный e-mail">
 						</p>
@@ -137,35 +137,35 @@
 						</ul>
 				</fieldset>
 
-				<fieldset class="order-form__field">
-					<legend class="order-form__legend">Дополнительные услуги:</legend>
+				<fieldset class="order-form__field order-form__field--less-margin">
+					<legend class="order-form__legend order-form__legend--bigger-margin">Дополнительные услуги:</legend>
 					<ul class="order-form__services-list">
-							<li class="order-form__services-option">
+							<li class="order-form__services-option order-form__services-option--beard-dyeing">
 								<input class="order-form__checkbox" id="beard-dyeing" type="checkbox" name="beard-dyeing" checked>
 								<label class="order-form__checkbox-label" for="beard-dyeing">Подкрасить бороду</label>
 							</li>
 
-							<li class="order-form__services-option">
+							<li class="order-form__services-option order-form__services-option--whiskers-cheat">
 								<input class="order-form__checkbox" id="whiskers-cheat" type="checkbox" name="whiskers-cheat" checked>
 								<label class="order-form__checkbox-label" for="whiskers-cheat">Накрутить усы</label>
 							</li>
 
-							<li class="order-form__services-option">
+							<li class="order-form__services-option order-form__services-option--beard-combing">
 								<input class="order-form__checkbox" id="beard-combing" type="checkbox" name="beard-combing">
 								<label class="order-form__checkbox-label" for="beard-combing">Причесать бороду</label>
 							</li>
 
-							<li class="order-form__services-option">
+							<li class="order-form__services-option order-form__services-option--temples-trimming">
 								<input class="order-form__checkbox" id="temples-trimming" type="checkbox" name="temples-trimming">
 								<label class="order-form__checkbox-label" for="temples-trimming">Подровнять виски</label>
 							</li>
 
-							<li class="order-form__services-option">
+							<li class="order-form__services-option order-form__services-option--graying-remove">
 								<input class="order-form__checkbox" id="graying-remove" type="checkbox" name="graying-remove">
 								<label class="order-form__checkbox-label" for="graying-remove">Убрать седину</label>
 							</li>
 
-							<li class="order-form__services-option">
+							<li class="order-form__services-option order-form__services-option--bald-head-polishing">
 								<input class="order-form__checkbox" id="bald-head-polishing" type="checkbox" name="bald-head-polishing">
 								<label class="order-form__checkbox-label" for="bald-head-polishing">Отполировать лысину</label>
 							</li>

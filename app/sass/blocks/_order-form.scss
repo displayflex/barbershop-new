@@ -2,18 +2,18 @@
 	text-align: center;
 
 	&__field {
-		border: none;
 		margin: 0;
-		padding: 0;
 		margin-bottom: 39px;
+		padding: 0;
+		border: none;
 	}
 
 	&__legend {
+		margin-bottom: 33px;
 		font-size: 20px;
 		line-height: 1.35;
-		text-transform: uppercase;
 		text-align: center;
-		margin-bottom: 33px;
+		text-transform: uppercase;
 	}
 
 	&__subgroup {
@@ -34,60 +34,60 @@
 	}
 
 	&__textarea {
-		resize: none;
 		min-height: 112px;
+		resize: none;
 	}
 
 	&__beard-list,
 	&__services-list {
 		@include list-reset;
+
 		display: flex;
 		flex-wrap: wrap;
 	}
 
 	&__beard-option {
-		width: 33%; //??? + min-width???
-		text-align: center;
-		padding-bottom: 114px;
+		width: 33%;
 		margin-bottom: 9px;
+		padding-bottom: 114px;
+		text-align: center;
 		background-repeat: no-repeat;
 
 		&--admiral {
 			background-image: url("../img/service-beard.svg");
-			background-size: 52px 49px;
 			background-position: bottom 52px center;
+			background-size: 52px 49px;
 		}
 
 		&--lumberjack {
 			background-image: url("../img/beard-2.svg");
-			background-size: 58px 68px;
 			background-position: bottom 34px center;
+			background-size: 58px 68px;
 		}
 
 		&--explorer {
 			background-image: url("../img/beard-3.svg");
-			background-size: 62px 79px;
 			background-position: bottom 21px center;
+			background-size: 62px 79px;
 		}
 
 		&--boyar {
 			background-image: url("../img/beard-4.svg");
-			background-size: 57px 98px;
 			background-position: bottom 7px center;
+			background-size: 57px 98px;
 		}
 
 		&--sage {
 			background-image: url("../img/beard-5.svg");
-			background-size: 45px 105px;
 			background-position: bottom center;
+			background-size: 45px 105px;
 		}
 	}
 
 	&__services-option {
-		width: 100%; //??? + min-width???
-		text-align: left;
+		width: 100%;
 		margin-bottom: 20px;
-		min-height: 36px; //?
+		text-align: left;
 
 		&:last-child {
 			margin-bottom: 0;
@@ -96,15 +96,15 @@
 
 	&__submit {
 		box-sizing: border-box;
-		margin-bottom: 24px;
 		width: 100%;
-		background-color: $brown;
-		color: #fff;
-		font-size: 18px;
+		margin-bottom: 24px;
 		font-weight: 700;
+		font-size: 18px;
 		line-height: 1.33;
-		text-transform: uppercase;
 		font-family: "PT Sans Narrow", "Arial", sans-serif;
+		color: #fff;
+		text-transform: uppercase;
+		background-color: $brown;
 
 		&:hover,
 		&:focus {
@@ -119,27 +119,30 @@
 
 // Стилизация радио кнопок
 .order-form__radio-label {
-	display: block;
 	position: relative;
+	display: block;
 	padding-top: 64px;
-	cursor: pointer;
 	font-size: 18px;
 	line-height: 1.33;
+
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 .order-form__radio-label::before {
 	content: "";
 	position: absolute;
-	display: block;
 	top: 0;
 	left: 50%;
-	transform: translateX(-50%);
+	display: block;
+	box-sizing: border-box;
 	width: 51px;
 	height: 51px;
-	border: 1px solid #e5ddd5;
 	background-color: #fff;
+	border: 1px solid #e5ddd5;
 	border-radius: 50%;
-	box-sizing: border-box;
+	transform: translateX(-50%);
 	transition: all 0.2s;
 }
 
@@ -163,19 +166,19 @@
 
 .order-form__radio:checked + .order-form__radio-label::after {
 	content: "";
-	display: block;
 	position: absolute;
 	top: 26px;
 	left: 50%;
+	display: block;
+	box-sizing: border-box;
+	width: 18px;
+	height: 18px;
+	background-color: #fff;
+	border: 1px solid #e5ddd5;
+	border-radius: 50%;
 	transform:
 		translateX(-50%)
 		translateY(-50%);
-	width: 18px;
-	height: 18px;
-	border: 1px solid #e5ddd5;
-	background-color: #fff;
-	border-radius: 50%;
-	box-sizing: border-box;
 	transition: border-color 0.2s;
 }
 
@@ -186,14 +189,17 @@
 
 // Стилизация чекбоксов
 .order-form__checkbox-label {
-	min-height: 36px;
+	position: relative;
 	display: flex;
 	align-items: center;
-	position: relative;
+	min-height: 36px;
 	padding-left: 60px;
-	cursor: pointer;
 	font-size: 18px;
 	line-height: 1.66;
+
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 .order-form__checkbox-label::before {
@@ -201,11 +207,11 @@
 	position: absolute;
 	top: 0;
 	left: 0;
+	box-sizing: border-box;
 	width: 36px;
 	height: 36px;
-	border: 1px solid #e5ddd5;
 	background-color: #fff;
-	box-sizing: border-box;
+	border: 1px solid #e5ddd5;
 	transition: all 0.2s;
 }
 
@@ -227,11 +233,144 @@
 	position: absolute;
 	top: 10px;
 	left: 7px;
+	box-sizing: border-box;
 	width: 22px;
 	height: 10px;
 	background-color: transparent;
-	box-sizing: border-box;
-	border-left: 2px solid #000;
 	border-bottom: 2px solid #000;
+	border-left: 2px solid #000;
 	transform: rotate(-45deg);
+}
+
+@media (min-width: $tablet-width) {
+	.order-form {
+		&__field {
+			margin-bottom: 58px;
+			overflow: hidden;
+
+			&--less-margin {
+				margin-bottom: 11px;
+			}
+		}
+
+		&__legend {
+			position: relative;
+			display: inline-block;
+			margin-bottom: 41px;
+			padding-right: 25px;
+			padding-left: 25px;
+			font-size: 30px;
+			line-height: 1;
+
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+				top: 50%;
+				display: block;
+				width: 9999px;
+				height: 1px;
+				margin-top: -4px;
+				background-color: #e5ddd5;
+			}
+
+			&::before {
+				right: 100%;
+			}
+
+			&::after {
+				left: 100%;
+			}
+
+			&--bigger-margin {
+				margin-bottom: 65px;
+			}
+		}
+
+		&__subgroup {
+			margin-bottom: 35px;
+
+			&--name {
+				display: flex;
+			}
+		}
+
+		&__item {
+			&--name,
+			&--surname,
+			&--middle-name {
+				width: 33.33%;
+				margin-bottom: 0;
+			}
+
+			&--name {
+				order: -1;
+			}
+
+			&--contact {
+				margin-bottom: 35px;
+			}
+		}
+
+		&__textarea {
+			min-height: 211px;
+		}
+
+		&__beard-list {
+			flex-wrap: nowrap;
+		}
+
+		&__beard-option {
+			width: 20%;
+			margin-bottom: 0;
+			padding-bottom: 135px;
+		}
+
+		&__radio-label {
+			padding-top: 81px;
+			font-size: 24px;
+			line-height: 1;
+		}
+
+		&__services-option {
+			width: 50%;
+			margin-bottom: 47px;
+
+			&--beard-dyeing {
+				order: 1;
+			}
+
+			&--whiskers-cheat {
+				order: 4;
+			}
+
+			&--beard-combing {
+				order: 2;
+			}
+
+			&--temples-trimming {
+				order: 5;
+			}
+
+			&--graying-remove {
+				order: 3;
+			}
+
+			&--bald-head-polishing {
+				order: 6;
+			}
+		}
+
+		&__checkbox-label {
+			font-size: 24px;
+			line-height: 1.25;
+		}
+
+		&__submit {
+			margin-bottom: 54px;
+			padding: 20px;
+			font-size: 24px;
+			line-height: 1.25;
+		}
+	}
 }

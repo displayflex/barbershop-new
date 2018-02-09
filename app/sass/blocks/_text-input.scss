@@ -9,6 +9,16 @@
 	text-transform: inherit;
 	background-color: #fff;
 	border: 1px solid #e5ddd5;
+	transition: all 0.2s;
+
+	&:hover,
+	&:focus {
+		border-color: #d5c9bd;
+	}
+
+	&:active {
+		border-color: #999;
+	}
 
 	&::placeholder {
 		color: #000;
@@ -31,4 +41,13 @@
 		color: #000 !important;
 	}
 	*/
+}
+
+
+@media (min-width: $tablet-width) {
+	.text-input {
+		padding: 19px 23px;
+		font-size: 24px;
+		line-height: 1.25;
+	}
 }

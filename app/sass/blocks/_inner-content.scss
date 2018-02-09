@@ -31,8 +31,8 @@
 
 	&--dark-triangle {
 		&::after {
-			border-left-color: #292929;
 			border-right-color: #292929;
+			border-left-color: #292929;
 		}
 	}
 }
@@ -49,6 +49,10 @@
 			justify-content: space-between;
 			align-items: center;
 			margin-bottom: 38px;
+
+			&--bigger-margin {
+				margin-bottom: 67px;
+			}
 		}
 
 		&__title {
@@ -64,6 +68,12 @@
 
 		&::after {
 			border-top-width: 41px;
+		}
+
+		&--no-triangle {
+			&::after {
+				display: none;
+			}
 		}
 	}
 }
