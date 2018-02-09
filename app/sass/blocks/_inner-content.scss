@@ -87,6 +87,10 @@
 
 		&__header {
 			margin-bottom: 79px;
+
+			&--bigger-margin {
+				margin-bottom: 67px;
+			}
 		}
 
 		&::after {

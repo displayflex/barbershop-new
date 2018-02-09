@@ -323,7 +323,23 @@
 		&__beard-option {
 			width: 20%;
 			margin-bottom: 0;
-			padding-bottom: 135px;
+			padding-bottom: 133px;
+
+			&--admiral {
+				background-position: bottom 54px center;
+			}
+
+			&--lumberjack {
+				background-position: bottom 36px center;
+			}
+
+			&--explorer {
+				background-position: bottom 24px center;
+			}
+
+			&--boyar {
+				background-position: bottom 6px center;
+			}
 		}
 
 		&__radio-label {
@@ -371,6 +387,60 @@
 			padding: 20px;
 			font-size: 24px;
 			line-height: 1.25;
+		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.order-form {
+		&__field {
+			margin-bottom: 74px;
+
+			&--less-margin {
+				margin-bottom: 32px;
+			}
+		}
+
+		&__legend {
+			margin-bottom: 49px;
+			padding-right: 35px;
+			padding-left: 35px;
+
+			&--bigger-margin {
+				margin-bottom: 65px;
+			}
+		}
+
+		&__subgroup {
+			&--name {
+				justify-content: space-between;
+			}
+
+			&--contact {
+				display: flex;
+				justify-content: space-between;
+			}
+		}
+
+		&__item {
+			&--name,
+			&--surname,
+			&--middle-name {
+				width: 30.7%;
+			}
+
+			&--contact {
+				width: 48.12%;
+				margin-bottom: 0;
+			}
+		}
+
+		&__services-option {
+			width: 33.33%;
+		}
+
+		&__submit {
+			margin-bottom: 39px;
 		}
 	}
 }
