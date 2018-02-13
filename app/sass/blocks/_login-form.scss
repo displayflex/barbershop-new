@@ -1,0 +1,101 @@
+.login-form {
+	&__item {
+		margin: 0 0 10px 0;
+	}
+
+	&__input {
+		&--icon-user {
+			background-image: url("../img/login-user.svg");
+			background-repeat: no-repeat;
+			background-position: center right 15px;
+			background-size: 15px 15px;
+		}
+
+		&--icon-password {
+			background-image: url("../img/login-lock.svg");
+			background-repeat: no-repeat;
+			background-position: center right 15px;
+			background-size: 15px 17px;
+		}
+	}
+
+	&__login-password-info {
+		display: flex;
+		margin: 0 0 15px 0;
+	}
+
+	&__restore {
+		margin-left: auto;
+		color: #000;
+		text-decoration: underline;
+		transition: color 0.2s;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $brown;
+		}
+	}
+
+	&__button {
+		width: 130px;
+		color: #fff;
+		background-color: $brown;
+	}
+
+	&__additional-text {
+		display: none;
+	}
+
+	// Стилизация кастомного чекбокса
+	&__checkbox {
+		position: relative;
+		min-height: 33px;
+		padding-left: 45px;
+		cursor: pointer;
+		transition: color 0.2s;
+
+		&:hover,
+		&:focus {
+			color: $brown;
+		}
+	}
+
+	&__checkbox-input {
+		display: none;
+	}
+
+	&__checkbox-input + .login-form__checkbox-indicator {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 33px;
+		height: 33px;
+		background-color: #fff;
+		border: 1px solid #e5ddd5;
+		transition: all 0.2s;
+
+		&:hover,
+		&:focus {
+			border-color: #d5c9bd;
+		}
+
+		&:active {
+			background-color: #d5c9bd;
+		}
+	}
+
+	&__checkbox-input:checked + .login-form__checkbox-indicator::after {
+		content: "";
+		position: absolute;
+		top: 7px;
+		left: 7px;
+		box-sizing: border-box;
+		width: 20px;
+		height: 10px;
+		background-color: transparent;
+		border-bottom: 2px solid #000;
+		border-left: 2px solid #000;
+		transform: rotate(-45deg);
+	}
+}
