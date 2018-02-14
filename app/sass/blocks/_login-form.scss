@@ -1,30 +1,34 @@
 .login-form {
 	&__item {
-		margin: 0 0 10px 0;
+		margin: 0 0 5px;
 	}
 
 	&__input {
+		padding: 10px 45px 10px 18px;
+
 		&--icon-user {
 			background-image: url("../img/login-user.svg");
 			background-repeat: no-repeat;
-			background-position: center right 15px;
+			background-position: center right 18px;
 			background-size: 15px 15px;
 		}
 
 		&--icon-password {
 			background-image: url("../img/login-lock.svg");
 			background-repeat: no-repeat;
-			background-position: center right 15px;
+			background-position: center right 18px;
 			background-size: 15px 17px;
 		}
 	}
 
 	&__login-password-info {
 		display: flex;
-		margin: 0 0 15px 0;
+		margin: 25px 0 28px;
 	}
 
 	&__restore {
+		display: flex;
+		align-items: center;
 		margin-left: auto;
 		color: #000;
 		text-decoration: underline;
@@ -50,6 +54,8 @@
 	// Стилизация кастомного чекбокса
 	&__checkbox {
 		position: relative;
+		display: flex;
+		align-items: center;
 		min-height: 33px;
 		padding-left: 45px;
 		cursor: pointer;
@@ -69,8 +75,8 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 33px;
-		height: 33px;
+		width: 31px;
+		height: 31px;
 		background-color: #fff;
 		border: 1px solid #e5ddd5;
 		transition: all 0.2s;
@@ -97,5 +103,28 @@
 		border-bottom: 2px solid #000;
 		border-left: 2px solid #000;
 		transform: rotate(-45deg);
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.login-form {
+		&__input {
+			&--icon-user,
+			&--icon-password {
+				background-position: center right 25px;
+			}
+		}
+
+		&__login-password-info {
+			margin: 26px 0 32px;
+		}
+
+		&__button {
+			width: 100%;
+		}
+
+		&__additional-text {
+			display: inline;
+		}
 	}
 }

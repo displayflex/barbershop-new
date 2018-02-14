@@ -1,261 +1,36 @@
-// .modal-content__close {
-// 	position: absolute;
-// 	top: 0;
-// 	right: -34px;
-// 	width: 22px;
-// 	height: 22px;
-// 	font-size: 0;
-// 	background-color: transparent;
-// 	border: 0;
-// 	cursor: pointer;
-
-// 	&::before,
-// 	&::after {
-// 		content: "";
-// 		position: absolute;
-// 		top: 10px;
-// 		left: 2px;
-// 		width: 19px;
-// 		height: 3px;
-// 		background-color: #fff;
-// 		border-radius: 1px;
-// 	}
-
-// 	&::before {
-// 		transform: rotate(45deg);
-// 	}
-
-// 	&::after {
-// 		transform: rotate(-45deg);
-// 	}
-// }
-
-//login
-// .modal-content {
-	// position: fixed;
-	// top: 120px;
-	// left: 50%;
-	// z-index: 20;
-	// display: none;
-	// width: 460px;
-	// margin-left: -230px;
-	// padding: 50px 80px;
-	// color: #000;
-	// background: $bg-lightgrey url("../img/pattern-white.jpg") 0 0 repeat;
-	// box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
-
-	// h2 {
-	// 	margin: 0 0 20px 0;
-	// 	font-size: 30px;
-	// 	line-height: 42px;
-	// }
-
-	// &__insruction {
-	// 	margin: 0 0 14px 0;
-	// }
-// }
-
-// @keyframes bounce {
-// 	0% {
-// 		transform: translateY(-2000px);
-// 	}
-
-// 	70% {
-// 		transform: translateY(30px);
-// 	}
-
-// 	90% {
-// 		transform: translateY(-10px);
-// 	}
-
-// 	100% {
-// 		transform: translateY(0);
-// 	}
-// }
-
-// @keyframes shake {
-// 	0%,
-// 	100% {
-// 		transform: translateX(0);
-// 	}
-
-// 	10%,
-// 	30%,
-// 	50%,
-// 	70%,
-// 	90% {
-// 		transform: translateX(-10px);
-// 	}
-
-// 	20%,
-// 	40%,
-// 	60%,
-// 	80% {
-// 		transform: translateX(10px);
-// 	}
-// }
-
-// .modal-content--show {
-// 	display: block;
-// 	animation: bounce 0.6s;
-// }
-
-// .modal-error {
-// 	animation: shake 0.6s;
-// }
-
-// .modal-content__form {
-// 	margin-bottom: 10px;
-// }
-
-// .login-form {
-// 	&__input {
-// 		width: 300px;
-// 		margin: 0;
-// 		padding: 10px 40px 10px 20px;
-// 		font: inherit;
-// 		color: inherit;
-// 		text-transform: inherit;
-// 		background-color: $bg-lightgrey;
-// 		border: 2px solid #000;
-
-// 		&::-webkit-input-placeholder {
-// 			color: #000;
-// 		}
-
-// 		&::-moz-placeholder {
-// 			color: #000;
-// 		}
-
-// 		&:-moz-placeholder {
-// 			color: #000;
-// 		}
-
-// 		&:-ms-input-placeholder {
-// 			color: #000 !important;
-// 		}
-
-// 		&:focus {
-// 			border-color: $brown;
-// 			outline-color: $brown;
-// 		}
-// 	}
-
-// 	&__item {
-// 		margin: 0 0 10px 0;
-// 	}
-
-// 	&__input--icon-user {
-// 		background-image: url("../img/sprite.png");
-// 		background-repeat: no-repeat;
-// 		background-position: 100% 4px;
-// 	}
-
-// 	&__input--icon-password {
-// 		background-image: url("../img/sprite.png");
-// 		background-repeat: no-repeat;
-// 		background-position: 100% -141px;
-// 	}
-
-// 	&__login-password-info {
-// 		margin: 0;
-// 	}
-
-// 	&__restore {
-// 		float: right;
-// 		color: #000;
-// 		text-decoration: underline;
-// 		transition: color 0.2s;
-
-// 		&:hover,
-// 		&:active {
-// 			color: $brown;
-// 		}
-// 	}
-
-// 	.btn {
-// 		width: 100%;
-// 		margin-top: 15px;
-// 	}
-// }
-
-// .login-form__checkbox {
-// 	position: relative;
-// 	padding-left: 30px;
-// 	cursor: pointer;
-// 	transition: color 0.2s;
-
-// 	&:hover {
-// 		color: $brown;
-// 	}
-
-// 	input[type="checkbox"] {
-// 		display: none;
-// 	}
-
-// 	input[type="checkbox"] + .login-form__checkbox-indicator {
-// 		position: absolute;
-// 		top: -1px;
-// 		left: 0;
-// 		width: 22px;
-// 		height: 22px;
-// 		border: 2px solid #000;
-// 	}
-
-// 	input[type="checkbox"]:checked + .login-form__checkbox-indicator::before,
-// 	input[type="checkbox"]:checked + .login-form__checkbox-indicator::after {
-// 		content: "";
-// 		position: absolute;
-// 		top: 8px;
-// 		left: 1px;
-// 		width: 16px;
-// 		height: 2px;
-// 		background-color: #000;
-// 	}
-
-// 	input[type="checkbox"]:checked + .login-form__checkbox-indicator::before {
-// 		transform: rotate(45deg);
-// 	}
-
-// 	input[type="checkbox"]:checked + .login-form__checkbox-indicator::after {
-// 		transform: rotate(-45deg);
-// 	}
-// }
-/////////////////////////////////
-
 .modal-content {
-	box-sizing: border-box;
 	position: fixed;
-	top: 133px;
+	top: 135px;
 	left: 50%;
 	z-index: 20;
-	//display: none;
-	display: block; //ВРЕМЕННО
+	display: none;
+	box-sizing: border-box;
 	width: 320px;
 	margin-left: -160px;
-	padding: 30px 20px;
+	padding: 33px 20px 37px;
 	color: #000;
 	background-color: $bg-lightgrey;
 	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
 
 	&__close {
 		position: absolute;
-		bottom: 30px;
 		right: 20px;
+		bottom: 37px;
 		width: 130px;
-		background-color: $bg-lightgrey;
+		height: auto;
 		color: #000;
+		background-color: $bg-lightgrey;
 		border: 1px solid #e5ddd5;
 
 		&::before,
 		&::after {
 			content: "";
-			display: none;
 			position: absolute;
-			top: 10px;
-			left: 2px;
-			width: 19px;
-			height: 3px;
+			top: 14px;
+			left: -1px;
+			display: none;
+			width: 34px;
+			height: 2px;
 			background-color: #fff;
 			border-radius: 1px;
 		}
@@ -270,18 +45,18 @@
 	}
 
 	&__title {
-		margin: 0 0 20px 0;
+		margin: 0 0 15px;
 		font-size: 30px;
-		text-transform: uppercase;
-		text-align: center;
 		line-height: 1;
+		text-align: center;
+		text-transform: uppercase;
 	}
 
 	&__insruction {
-		margin: 0 0 14px 0;
-		text-align: center;
+		margin: 0 0 22px;
 		font-size: 18px;
 		line-height: 1.5;
+		text-align: center;
 	}
 }
 
@@ -332,4 +107,33 @@
 
 .modal-content--error {
 	animation: shake 0.6s;
+}
+
+@media (min-width: $tablet-width) {
+	.modal-content {
+		top: 129px;
+		width: 460px;
+		margin-left: -230px;
+		padding: 54px 70px 57px;
+
+		&__close {
+			top: 60px;
+			right: -105px;
+			width: 31px;
+			height: 31px;
+			font-size: 0;
+			background-color: transparent;
+			border: 0;
+
+			&::before,
+			&::after {
+				display: block;
+			}
+		}
+
+		&__title {
+			font-size: 40px;
+			line-height: 1;
+		}
+	}
 }
