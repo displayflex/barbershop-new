@@ -1,5 +1,24 @@
 .slider {
-	&__toggles {
+	overflow: hidden;
+
+
+	&__list {
+		@include list-reset;
+
+		width: 300%;
+		transition: transform 0.6s ease;
+	}
+
+	&__item {
+		float: left;
+		width: 33.33%; //в advantages??
+	}
+
+	&__radio {
+		display: none;
+	}
+
+	&__controls {
 		display: flex;
 		justify-content: space-between;
 		width: 80px;
@@ -8,26 +27,60 @@
 
 	&__toggle {
 		display: inline-block;
+		box-sizing: border-box;
 		width: 8px;
 		height: 8px;
 		padding: 0;
 		font-size: 0;
 		vertical-align: top;
 		background-color: #242424;
-		border: 2px solid #fff;
+		border: 2px solid #959595;
 		transform: rotate(45deg);
+		transition: all 0.2s;
 
 		&:hover {
 			background-color: #fff;
+			border-color: #fff;
 			cursor: pointer;
 		}
+	}
+}
 
-		&--active {
-			background-color: #fff;
+#advantages-switch-1:checked ~ .slider__controls label[for="advantages-switch-1"],
+#advantages-switch-2:checked ~ .slider__controls label[for="advantages-switch-2"],
+#advantages-switch-3:checked ~ .slider__controls label[for="advantages-switch-3"] {
+	background-color: #fff;
+	border-color: #fff;
 
-			&:hover {
-				cursor: default;
-			}
+	&:hover {
+		cursor: default;
+	}
+}
+
+
+@media (max-width: $mobile-width-only) {
+	#advantages-switch-1:checked ~ .slider__list {
+		transform: translate(0);
+	}
+
+	#advantages-switch-2:checked ~ .slider__list {
+		transform: translate(-33.33%);
+	}
+
+	#advantages-switch-3:checked ~ .slider__list {
+		transform: translate(-66.66%);
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.slider {
+		&__list {
+			width: 100%; //в advantages??
+		}
+
+		&__item {
+			float: none;
+			width: 100%; //в advantages??
 		}
 	}
 }
