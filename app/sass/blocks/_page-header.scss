@@ -65,12 +65,13 @@
 	.page-header__logo {
 		height: 648px;
 		//background-position: center 0;
-		//background-size: cover;
+		background-size: cover;
 		background-image: url("../img/back-desktop.jpg");
 
 		@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
 			background-image: url("../img/back-desktop@2x.jpg");
-			background-size: 2560px auto;
+			//background-size: 2560px auto;
+			background-size: cover;
 		}
 	}
 
