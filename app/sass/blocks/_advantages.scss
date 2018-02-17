@@ -3,14 +3,24 @@
 	text-align: center;
 	background-color: #242424;
 
+	&__wrapper {
+		padding-bottom: 7px;
+	}
+
 	&__slider {
 		width: 75%;
 		margin: 0 auto;
-		padding-bottom: 11px;
+	}
+
+	&__list {
+		@include list-reset;
+
+		width: 300%;
 	}
 
 	&__item {
 		box-sizing: border-box;
+		width: 33.33%;
 		padding-top: 153px;
 		color: #f7f4f1;
 		background-repeat: no-repeat;
@@ -62,16 +72,21 @@
 		background-color: #353535;
 
 		&__wrapper {
-			padding: 0;
+			padding-bottom: 6px;
 		}
 
 		&__slider {
 			margin: 0 auto;
-			padding-bottom: 6px;
+		}
+
+		&__list {
+			display: block;
+			width: 100%; //сюда??
 		}
 
 		&__item {
 			display: block;
+			width: 100%; //сюда??
 			min-height: 167px;
 			padding: 42px 0 35px 126px;
 			background-position: 0 center;

@@ -107,9 +107,9 @@
 			<h2 class="visually-hidden">Наши преимущества</h2>
 
 			<div class="slider advantages__slider">
-				<input class="slider__radio" type="radio" id="advantages-switch-1" name="toggle" checked>
-				<input class="slider__radio" type="radio" id="advantages-switch-2" name="toggle">
-				<input class="slider__radio" type="radio" id="advantages-switch-3" name="toggle">
+				<input class="slider__radio" type="radio" id="advantages-switch-1" name="advantages-toggle" checked>
+				<input class="slider__radio" type="radio" id="advantages-switch-2" name="advantages-toggle">
+				<input class="slider__radio" type="radio" id="advantages-switch-3" name="advantages-toggle">
 
 				<ul class="slider__list advantages__list">
 					<li class="advantages__item advantages__item--fast slider__item">
@@ -126,12 +126,12 @@
 					</li>
 				</ul>
 
-				<div class="advantages__toggles slider__controls">
+				<div class="advantages__toggles slider__toggles">
 					<label class="slider__toggle" for="advantages-switch-1"></label>
 					<label class="slider__toggle" for="advantages-switch-2"></label>
 					<label class="slider__toggle" for="advantages-switch-3"></label>
-				</div>
-			</div><!-- /slider -->
+				</div><!-- /advantages__toggles /slider__controls -->
+			</div><!-- /slider /advantages__slider-->
 		</div><!-- /advantages__wrapper -->
 	</section><!-- /advantages -->
 
@@ -169,61 +169,73 @@
 	</section><!-- /news -->
 
 	<section class="reviews">
-		<div class="reviews__wrapper slider">
+		<div class="reviews__wrapper">
 			<h2 class="reviews__title">Отзывы о нас</h2>
 
 			<a href="#" class="reviews__write button">Оставить свой</a>
 
-			<div class="reviews__list slider__list">
-				<blockquote class="reviews__item reviews__item--active slider__item">
-					<p class="reviews__author-picture">
-						<picture>
-							<source media="(min-width: 1200px)" srcset="img/author-travis-desktop.jpg">
-							<source media="(min-width: 768px)" srcset="img/author-travis-tablet.jpg">
-							<img class="reviews__author-image" src="img/author-travis-mobile.jpg" width="48" height="46" alt="Фото Трэвиса Баркера">
-						</picture>
-					</p>
-					<div class="reviews__description">
-						<cite class="reviews__author-name">Трэвис Баркер</cite>
-						<p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
-					</div>
-				</blockquote>
-				<blockquote class="reviews__item slider__item">
-					<p class="reviews__author-picture">
-						<picture>
-							<source media="(min-width: 1200px)" srcset="img/author-john-desktop.jpg">
-							<source media="(min-width: 768px)" srcset="img/author-john-tablet.jpg">
-							<img class="reviews__author-image" src="img/author-john-mobile.jpg" width="48" height="46" alt="Фото Трэвиса Баркера">
-						</picture>
-					</p>
-					<div class="reviews__description">
-						<cite class="reviews__author-name">Джон Смит</cite>
-						<p class="reviews__text">Отличную стрижку мне сделали ребята!</p>
-					</div>
-				</blockquote>
-				<blockquote class="reviews__item slider__item">
-					<p class="reviews__author-picture">
-						<picture>
-							<source media="(min-width: 1200px)" srcset="img/author-ivan-desktop.jpg">
-							<source media="(min-width: 768px)" srcset="img/author-ivan-tablet.jpg">
-							<img class="reviews__author-image" src="img/author-ivan-mobile.jpg" width="48" height="46" alt="Фото Трэвиса Баркера">
-						</picture>
-					</p>
-					<div class="reviews__description">
-						<cite class="reviews__author-name">Иван Бородайло</cite>
-						<p class="reviews__text">В Бородинском Ваша борода в надежных руках!</p>
-					</div>
-				</blockquote>
-				<button class="reviews__control reviews__control--prev" type="button">Предыдущий отзыв</button>
-				<button class="reviews__control reviews__control--next" type="button">Следующий отзыв</button>
-			</div><!-- /reviews__list /slider__list -->
+			<div class="reviews__slider-wrapper">
+				<div class="slider reviews__slider">
+					<input class="slider__radio" type="radio" id="reviews-switch-1" name="reviews-toggle" checked>
+					<input class="slider__radio" type="radio" id="reviews-switch-2" name="reviews-toggle">
+					<input class="slider__radio" type="radio" id="reviews-switch-3" name="reviews-toggle">
 
-			<p class="reviews__toggles slider__toggles">
-				<button class="slider__toggle slider__toggle--active">1</button>
-				<button class="slider__toggle">2</button>
-				<button class="slider__toggle">3</button>
-			</p>
-		</div><!-- /reviews__wrapper /slider -->
+					<div class="reviews__list slider__list">
+						<blockquote class="reviews__item slider__item">
+							<p class="reviews__author-picture">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/author-travis-desktop.jpg">
+									<source media="(min-width: 768px)" srcset="img/author-travis-tablet.jpg">
+									<img class="reviews__author-image" src="img/author-travis-mobile.jpg" width="48" height="46" alt="Фото Трэвиса Баркера">
+								</picture>
+							</p>
+							<div class="reviews__description">
+								<cite class="reviews__author-name">Трэвис Баркер</cite>
+								<p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+							</div>
+						</blockquote>
+						<blockquote class="reviews__item slider__item">
+							<p class="reviews__author-picture">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/author-john-desktop.jpg">
+									<source media="(min-width: 768px)" srcset="img/author-john-tablet.jpg">
+									<img class="reviews__author-image" src="img/author-john-mobile.jpg" width="48" height="46" alt="Фото Трэвиса Баркера">
+								</picture>
+							</p>
+							<div class="reviews__description">
+								<cite class="reviews__author-name">Джон Смит</cite>
+								<p class="reviews__text">Отличную стрижку мне сделали ребята!</p>
+							</div>
+						</blockquote>
+						<blockquote class="reviews__item slider__item">
+							<p class="reviews__author-picture">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/author-ivan-desktop.jpg">
+									<source media="(min-width: 768px)" srcset="img/author-ivan-tablet.jpg">
+									<img class="reviews__author-image" src="img/author-ivan-mobile.jpg" width="48" height="46" alt="Фото Трэвиса Баркера">
+								</picture>
+							</p>
+							<div class="reviews__description">
+								<cite class="reviews__author-name">Иван Бородайло</cite>
+								<p class="reviews__text">В Бородинском Ваша борода в надежных руках!</p>
+							</div>
+						</blockquote>
+					</div><!-- /reviews__list /slider__list -->
+
+					<div class="reviews__side-controls slider__side-controls">
+						<label class="slider__side-control" for="reviews-switch-1"></label>
+						<label class="slider__side-control" for="reviews-switch-2"></label>
+						<label class="slider__side-control" for="reviews-switch-3"></label>
+					</div><!-- /reviews__side-controls /slider__side-controls -->
+
+					<div class="reviews__toggles slider__toggles">
+						<label class="slider__toggle slider__toggle--dark" for="reviews-switch-1"></label>
+						<label class="slider__toggle slider__toggle--dark" for="reviews-switch-2"></label>
+						<label class="slider__toggle slider__toggle--dark" for="reviews-switch-3"></label>
+					</div><!-- /reviews__toggles /slider__toggles -->
+				</div><!-- /slider /rewiews__slider-->
+			</div><!-- /reviews__slider-wrapper -->
+		</div><!-- /reviews__wrapper -->
 	</section><!-- /reviews -->
 </main>
 <!-- /Main -->

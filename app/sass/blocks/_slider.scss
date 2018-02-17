@@ -1,27 +1,20 @@
 .slider {
 	overflow: hidden;
 
-
 	&__list {
-		@include list-reset;
-
-		width: 300%;
+		display: flex;
 		transition: transform 0.6s ease;
-	}
-
-	&__item {
-		float: left;
-		width: 33.33%; //в advantages??
 	}
 
 	&__radio {
 		display: none;
 	}
 
-	&__controls {
+	&__toggles {
 		display: flex;
 		justify-content: space-between;
 		width: 80px;
+		min-height: 12px;
 		margin: 0 auto;
 	}
 
@@ -43,12 +36,58 @@
 			border-color: #fff;
 			cursor: pointer;
 		}
+
+		&--dark {
+			background-color: #f8f5f2;
+			border-color: #939290;
+
+			&:hover {
+				background-color: #353535;
+				border-color: #353535;
+			}
+		}
+	}
+
+	&__side-control {
+		position: absolute;
+		top: 0;
+		display: none;
+		box-sizing: border-box;
+		width: 50px;
+		height: 100%;
+		padding: 0;
+		font-size: 0;
+		background-color: #f8f5f2;
+		border: 1px solid #e5ddd5;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 19px;
+			display: block;
+			width: 0;
+			height: 0;
+			border-top: 6px solid transparent;
+			border-bottom: 6px solid transparent;
+			transform: translateY(-50%);
+		}
+
+		&:hover,
+		&:focus {
+			border-color: #d5c9bd;
+		}
+
+		&:active {
+			background-color: #d5c9bd;
+			border-color: #958c84;
+		}
 	}
 }
 
-#advantages-switch-1:checked ~ .slider__controls label[for="advantages-switch-1"],
-#advantages-switch-2:checked ~ .slider__controls label[for="advantages-switch-2"],
-#advantages-switch-3:checked ~ .slider__controls label[for="advantages-switch-3"] {
+#advantages-switch-1:checked ~ .slider__toggles label[for="advantages-switch-1"],
+#advantages-switch-2:checked ~ .slider__toggles label[for="advantages-switch-2"],
+#advantages-switch-3:checked ~ .slider__toggles label[for="advantages-switch-3"] {
 	background-color: #fff;
 	border-color: #fff;
 
@@ -57,6 +96,52 @@
 	}
 }
 
+#reviews-switch-1:checked ~ .slider__toggles label[for="reviews-switch-1"],
+#reviews-switch-2:checked ~ .slider__toggles label[for="reviews-switch-2"],
+#reviews-switch-3:checked ~ .slider__toggles label[for="reviews-switch-3"] {
+	background-color: #353535;
+	border-color: #353535;
+
+	&:hover {
+		cursor: default;
+	}
+}
+
+#reviews-switch-1:checked ~ .slider__side-controls label[for="reviews-switch-3"],
+#reviews-switch-2:checked ~ .slider__side-controls label[for="reviews-switch-1"],
+#reviews-switch-3:checked ~ .slider__side-controls label[for="reviews-switch-2"] {
+	left: 0;
+	display: block;
+
+	&::after {
+		border-right: 12px solid #000;
+		border-left: none;
+	}
+}
+
+#reviews-switch-1:checked ~ .slider__side-controls label[for="reviews-switch-2"],
+#reviews-switch-2:checked ~ .slider__side-controls label[for="reviews-switch-3"],
+#reviews-switch-3:checked ~ .slider__side-controls label[for="reviews-switch-1"] {
+	right: 0;
+	display: block;
+
+	&::after {
+		border-right: none;
+		border-left: 12px solid #000;
+	}
+}
+
+#reviews-switch-1:checked ~ .slider__list {
+	transform: translate(0);
+}
+
+#reviews-switch-2:checked ~ .slider__list {
+	transform: translate(-33.33%);
+}
+
+#reviews-switch-3:checked ~ .slider__list {
+	transform: translate(-66.66%);
+}
 
 @media (max-width: $mobile-width-only) {
 	#advantages-switch-1:checked ~ .slider__list {
@@ -70,17 +155,9 @@
 	#advantages-switch-3:checked ~ .slider__list {
 		transform: translate(-66.66%);
 	}
-}
 
-@media (min-width: $tablet-width) {
-	.slider {
-		&__list {
-			width: 100%; //в advantages??
-		}
-
-		&__item {
-			float: none;
-			width: 100%; //в advantages??
-		}
+	.slider__side-controls {
+		display: none;
 	}
 }
+
