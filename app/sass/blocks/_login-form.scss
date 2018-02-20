@@ -1,24 +1,20 @@
 .login-form {
 	&__item {
+		position: relative;
 		margin: 0 0 5px;
 	}
 
 	&__input {
 		padding: 10px 45px 10px 18px;
+	}
 
-		&--icon-user {
-			background-image: url("../img/login-user.svg");
-			background-repeat: no-repeat;
-			background-position: center right 18px;
-			background-size: 15px 15px;
-		}
+	&__icon {
+		position: absolute;
+		top: 50%;
+		right: 18px;
+		transform: translateY(-50%);
 
-		&--icon-password {
-			background-image: url("../img/login-lock.svg");
-			background-repeat: no-repeat;
-			background-position: center right 18px;
-			background-size: 15px 17px;
-		}
+		fill: #000;
 	}
 
 	&__login-password-info {
@@ -108,11 +104,8 @@
 
 @media (min-width: $tablet-width) {
 	.login-form {
-		&__input {
-			&--icon-user,
-			&--icon-password {
-				background-position: center right 25px;
-			}
+		&__icon {
+			right: 25px;
 		}
 
 		&__login-password-info {
