@@ -16,14 +16,17 @@
 	height: 16px;
 	opacity: 0.3;
 
-	path {
-		fill: #fff;
-	}
+	fill: #fff;
 }
 
 @media (min-width: $tablet-width) {
 	.user-list {
 		width: 60px;
+	}
+
+	.user-list__login-icon {
+		top: 29px;
+		left: 12px;
 	}
 
 	.user-list__login {
@@ -35,15 +38,8 @@
 		&:hover .user-list__login-icon {
 			opacity: 1;
 
-			path {
-				fill: $brown;
-			}
+			fill: $brown;
 		}
-	}
-
-	.user-list__login-icon {
-		top: 29px;
-		left: 12px;
 	}
 }
 
@@ -53,14 +49,18 @@
 		max-width: 160px;
 	}
 
+	.user-list__login-icon {
+		left: 15px;
+	}
+
 	.user-list__login {
 		position: relative;
 		width: auto;
 		height: auto;
 		padding: 25px 30px 23px 50px;
+		font-weight: bold;
 		font-size: 18px;
 		line-height: 24px;
-		font-weight: bold;
 		text-transform: uppercase;
 		text-decoration: none;
 
@@ -77,13 +77,7 @@
 		&:hover .user-list__login-icon {
 			opacity: 0.3;
 
-			path {
-				fill: #000;
-			}
+			fill: #000;
 		}
-	}
-
-	.user-list__login-icon {
-		left: 15px;
 	}
 }

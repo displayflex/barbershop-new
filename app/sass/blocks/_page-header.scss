@@ -13,6 +13,14 @@
 	height: 85px;
 }
 
+.page-header__logo-barbershop {
+	display: none;
+}
+
+.page-header__logo-mustache {
+	display: none;
+}
+
 @media (min-width: $tablet-width) {
 	.page-header {
 		background-color: #000;
@@ -20,7 +28,7 @@
 
 	.page-header__logo {
 		order: 2;
-		width: 100%; //?
+		width: 100%;
 		height: 400px;
 		background-color: #000;
 		background-image: url("../img/back-tablet.jpg");
@@ -59,14 +67,18 @@
 		margin: 0 auto;
 		margin-top: 40px;
 	}
+
+	.page-header__logo-barbershop {
+		display: inline-block;
+	}
 }
 
 @media (min-width: $desktop-width) {
 	.page-header__logo {
 		height: 648px;
+		background-image: url("../img/back-desktop.jpg");
 		//background-position: center 0;
 		background-size: cover;
-		background-image: url("../img/back-desktop.jpg");
 
 		@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
 			background-image: url("../img/back-desktop@2x.jpg");
@@ -90,5 +102,9 @@
 
 	.page-header__logo-image {
 		margin-top: 57px;
+	}
+
+	.page-header__logo-mustache {
+		display: inline-block;
 	}
 }

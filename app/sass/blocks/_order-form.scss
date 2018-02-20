@@ -6,6 +6,10 @@
 		margin-bottom: 39px;
 		padding: 0;
 		border: none;
+
+		&--beard-options {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__legend {
@@ -48,39 +52,37 @@
 
 	&__beard-option {
 		width: 33%;
-		margin-bottom: 9px;
-		padding-bottom: 114px;
+		margin-bottom: 20px;
 		text-align: center;
 		background-repeat: no-repeat;
+	}
+
+	&__icon {
+		fill: $brown;
 
 		&--admiral {
-			background-image: url("../img/service-beard.svg");
-			background-position: bottom 52px center;
-			background-size: 52px 49px;
+			width: 52px;
+			height: auto;
 		}
 
 		&--lumberjack {
-			background-image: url("../img/beard-2.svg");
-			background-position: bottom 34px center;
-			background-size: 58px 68px;
+			width: 58px;
+			height: 68px;
 		}
 
 		&--explorer {
-			background-image: url("../img/beard-3.svg");
-			background-position: bottom 21px center;
-			background-size: 62px 79px;
+			width: 62px;
+			height: 79px;
 		}
 
 		&--boyar {
-			background-image: url("../img/beard-4.svg");
-			background-position: bottom 7px center;
-			background-size: 57px 98px;
+			width: 57px;
+			height: 98px;
 		}
 
 		&--sage {
-			background-image: url("../img/beard-5.svg");
-			background-position: bottom center;
-			background-size: 45px 105px;
+			width: 45px;
+			height: 105px;
 		}
 	}
 
@@ -121,6 +123,7 @@
 .order-form__radio-label {
 	position: relative;
 	display: block;
+	margin-bottom: 12px;
 	padding-top: 64px;
 	font-size: 18px;
 	line-height: 1.33;
@@ -248,7 +251,11 @@
 			margin-bottom: 58px;
 			overflow: hidden;
 
-			&--less-margin {
+			&--beard-options {
+				margin-bottom: 49px;
+			}
+
+			&--services {
 				margin-bottom: 11px;
 			}
 		}
@@ -323,26 +330,10 @@
 		&__beard-option {
 			width: 20%;
 			margin-bottom: 0;
-			padding-bottom: 133px;
-
-			&--admiral {
-				background-position: bottom 54px center;
-			}
-
-			&--lumberjack {
-				background-position: bottom 36px center;
-			}
-
-			&--explorer {
-				background-position: bottom 24px center;
-			}
-
-			&--boyar {
-				background-position: bottom 6px center;
-			}
 		}
 
 		&__radio-label {
+			margin-bottom: 32px;
 			padding-top: 81px;
 			font-size: 24px;
 			line-height: 1;
@@ -396,7 +387,11 @@
 		&__field {
 			margin-bottom: 74px;
 
-			&--less-margin {
+			&--beard-options {
+				margin-bottom: 49px;
+			}
+
+			&--services {
 				margin-bottom: 32px;
 			}
 		}

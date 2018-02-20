@@ -6,6 +6,7 @@
 
 	&__list {
 		@include list-reset;
+
 		display: flex;
 		justify-content: center;
 		font-size: 0;
@@ -24,31 +25,35 @@
 		}
 	}
 
-	&__link {
-		display: inline-block;
-		box-sizing: border-box;
-		width: 100%;
-		height: 100%;
-		color: #fff;
-		text-decoration: none;
-		background-repeat: no-repeat;
-		background-position: center;
-		transition: 0.3s all ease;
+	&__icon {
+		fill: #fff;
 
 		&--vkontakte {
-			background-image: url("../img/social-vk.svg");
-			background-size: 38px auto;
+			width: 38px;
+			height: auto;
 		}
 
 		&--facebook {
-			background-image: url("../img/social-facebook.svg");
-			background-size: 19px auto;
+			width: 19px;
+			height: auto;
 		}
 
 		&--instagram {
-			background-image: url("../img/social-instagram.svg");
-			background-size: 36px auto;
+			width: 36px;
+			height: auto;
 		}
+	}
+
+	&__link {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-sizing: border-box;
+		width: 100%;
+		height: 100%;
+		color: #fff; //нужен ли?
+		text-decoration: none;
+		transition: 0.3s all ease;
 
 		&:hover,
 		&:focus {
@@ -59,6 +64,10 @@
 			color: rgba(#fff, 0.3);
 			background-color: #252525;
 			border-color: #252525;
+
+			.social__icon {
+				fill: rgba(#fff, 0.3);
+			}
 		}
 	}
 }
@@ -89,17 +98,17 @@
 			}
 		}
 
-		&__link {
+		&__icon {
 			&--vkontakte {
-				background-size: 26px auto;
+				width: 26px;
 			}
 
 			&--facebook {
-				background-size: 11px auto;
+				width: 11px;
 			}
 
 			&--instagram {
-				background-size: 19px auto;
+				width: 19px;
 			}
 		}
 	}

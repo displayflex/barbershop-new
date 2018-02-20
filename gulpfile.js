@@ -65,6 +65,7 @@ gulp.task("html", function () {
 
 gulp.task("concat", function() {
 	return gulp.src([
+			'app/js/svgxuse.js',
 			'app/js/main-nav.js',
 			'app/js/login-popup.js'
 		])

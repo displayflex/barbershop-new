@@ -47,7 +47,7 @@
 
 	&__info {
 		flex-grow: 1;
-		padding: 20px 0 4px 20px;
+		padding: 20px 0 0 20px;
 		border: 1px solid #e5ddd5;
 		border-top: none;
 	}
@@ -61,7 +61,7 @@
 	}
 
 	&__descr {
-		margin: 0 0 16px;
+		margin: 0 0 18px;
 		padding-right: 20px;
 	}
 
@@ -73,34 +73,32 @@
 	}
 
 	&__services-item {
+		display: flex;
+		align-items: center;
 		box-sizing: border-box;
 		min-width: 129px;
-		margin-bottom: 15px;
+		margin-bottom: 23px;
 		font-size: 16px;
-		line-height: 1.69;
+		line-height: 1;
 		text-align: left;
 		text-transform: uppercase;
 		background-repeat: no-repeat;
+	}
+
+	&__services-icon {
+		fill: $brown;
 
 		&--scissors {
-			padding-left: 37px;
-			background-image: url("../img/service-scissors.svg");
-			background-position: 0 2px;
-			background-size: 23px 20px;
+			margin-right: 14px;
 		}
 
 		&--beard {
-			padding-left: 37px;
-			background-image: url("../img/service-beard.svg");
-			background-position: 0 0;
-			background-size: 22px 21px;
+			margin-right: 18px;
 		}
 
 		&--mustache {
-			padding-left: 55px;
-			background-image: url("../img/service-mustache.svg");
-			background-position: 0 4px;
-			background-size: 45px 15px;
+			margin-right: 13px;
+			margin-left: -11px;
 		}
 	}
 }
