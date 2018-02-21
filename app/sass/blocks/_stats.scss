@@ -173,9 +173,11 @@
 	.stats__list tr {
 		//width: 250px; //для не резиновой версии
 		width: 50%; //для резиновой версии
+		max-width: 50%;
 		box-sizing: border-box; //для резиновой версии
 		padding: 25px 35px;
 		padding-bottom: 28px;
+		display: block;
 	}
 
 	.stats__list td {

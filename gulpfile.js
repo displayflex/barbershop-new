@@ -50,7 +50,7 @@ gulp.task("style", function () {
 gulp.task("html", function () {
 	return gulp.src("app/*.html")
 	.pipe(posthtml([
-		include()
+		 include()
 	]))
 	.pipe(htmlmin({
 		collapseWhitespace: true,
@@ -65,7 +65,8 @@ gulp.task("html", function () {
 
 gulp.task("concat", function() {
 	return gulp.src([
-			'app/js/svgxuse.js',
+			'app/js/picturefill.min.js',
+			'app/js/svgxuse.min.js',
 			'app/js/main-nav.js',
 			'app/js/login-popup.js'
 		])

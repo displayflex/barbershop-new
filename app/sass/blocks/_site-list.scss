@@ -35,7 +35,7 @@
 		flex-grow: 1; // для резиновой версии
 		flex-wrap: wrap;
 		//justify-content: flex-start; // для не резиновой версии
-		justify-content: space-between; // для резиновой версии
+		justify-content: space-around; // для резиновой версии
 		width: 570px;
 	}
 
@@ -86,11 +86,12 @@
 
 @media (min-width: $desktop-width) {
 	.site-list {
+		justify-content: flex-start;
 		width: 780px;
 	}
 
 	.site-list__item {
-		margin-right: 0;
+		// margin-right: 0;
 
 		&--active::after {
 			right: 30px;
