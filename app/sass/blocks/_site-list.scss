@@ -32,10 +32,10 @@
 @media (min-width: $tablet-width) {
 	.site-list {
 		display: flex;
+		flex-grow: 1; // для резиновой версии
 		flex-wrap: wrap;
 		//justify-content: flex-start; // для не резиновой версии
 		justify-content: space-between; // для резиновой версии
-		flex-grow: 1; // для резиновой версии
 		width: 570px;
 	}
 
@@ -55,6 +55,7 @@
 				right: 0;
 				bottom: -3px;
 				left: 0;
+				z-index: 1000;
 				height: 3px;
 				background-color: $brown;
 			}

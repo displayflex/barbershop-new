@@ -17,11 +17,15 @@
 		width: 33.33%;
 		height: 101px;
 		border: 1px solid #3e3e3e;
-		transition: 0.3s border-color ease;
+		transition: 0.3s all ease;
 
 		&:hover,
 		&:focus {
 			border-color: #515151;
+		}
+
+		&:active {
+			border-color: #252525;
 		}
 	}
 
@@ -51,7 +55,7 @@
 		box-sizing: border-box;
 		width: 100%;
 		height: 100%;
-		color: #fff; //нужен ли?
+		color: #fff;
 		text-decoration: none;
 		transition: 0.3s all ease;
 
@@ -63,7 +67,6 @@
 		&:active {
 			color: rgba(#fff, 0.3);
 			background-color: #252525;
-			border-color: #252525;
 
 			.social__icon {
 				fill: rgba(#fff, 0.3);
