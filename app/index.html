@@ -53,7 +53,7 @@
 				<li class="user-list__item">
 					<a class="user-list__login" href="login.html">
 						<svg class="user-list__login-icon" width="16" height="16">
-							<use xlink:href="img/sprite.svg#icon-login"></use>
+							<use xlink:href="img/svg/sprite.svg#icon-login"></use>
 						</svg>
 
 						Войти
@@ -188,6 +188,10 @@
 						<blockquote class="reviews__item slider__item">
 							<p class="reviews__author-picture">
 								<picture>
+									<source media="(min-width: 1200px)" srcset="img/webp/author-travis-desktop.webp 1x, img/webp/author-travis-desktop@2x.webp 2x">
+									<source media="(min-width: 768px)" srcset="img/webp/author-travis-tablet.webp 1x, img/webp/author-travis-tablet@2x.webp 2x">
+									<source type="image/webp" srcset="img/webp/author-travis-mobile.webp 1x, img/webp/author-travis-mobile@2x.webp 2x">
+
 									<source media="(min-width: 1200px)" srcset="img/author-travis-desktop.jpg 1x, img/author-travis-desktop@2x.jpg 2x">
 									<source media="(min-width: 768px)" srcset="img/author-travis-tablet.jpg 1x, img/author-travis-tablet@2x.jpg 2x">
 									<img class="reviews__author-image" src="img/author-travis-mobile.jpg" srcset="img/author-travis-mobile@2x.jpg 2x" alt="Фото Трэвиса Баркера">
@@ -201,6 +205,10 @@
 						<blockquote class="reviews__item slider__item">
 							<p class="reviews__author-picture">
 								<picture>
+									<source media="(min-width: 1200px)" srcset="img/webp/author-john-desktop.webp 1x, img/webp/author-john-desktop@2x.webp 2x">
+									<source media="(min-width: 768px)" srcset="img/webp/author-john-tablet.webp 1x, img/webp/author-john-tablet@2x.webp 2x">
+									<source type="image/webp" srcset="img/webp/author-john-mobile.webp 1x, img/webp/author-john-mobile@2x.webp 2x">
+
 									<source media="(min-width: 1200px)" srcset="img/author-john-desktop.jpg 1x, img/author-john-desktop@2x.jpg 2x">
 									<source media="(min-width: 768px)" srcset="img/author-john-tablet.jpg 1x, img/author-john-tablet@2x.jpg 2x">
 									<img class="reviews__author-image" src="img/author-john-mobile.jpg" srcset="img/author-john-mobile@2x.jpg 2x" alt="Фото Джона Смита">
@@ -214,6 +222,10 @@
 						<blockquote class="reviews__item slider__item">
 							<p class="reviews__author-picture">
 								<picture>
+									<source media="(min-width: 1200px)" srcset="img/webp/author-ivan-desktop.webp 1x, img/webp/author-ivan-desktop@2x.webp 2x">
+									<source media="(min-width: 768px)" srcset="img/webp/author-ivan-tablet.webp 1x, img/webp/author-ivan-tablet@2x.webp 2x">
+									<source type="image/webp" srcset="img/webp/author-ivan-mobile.webp 1x, img/webp/author-ivan-mobile@2x.webp 2x">
+
 									<source media="(min-width: 1200px)" srcset="img/author-ivan-desktop.jpg 1x, img/author-ivan-desktop@2x.jpg 2x">
 									<source media="(min-width: 768px)" srcset="img/author-ivan-tablet.jpg 1x, img/author-ivan-tablet@2x.jpg 2x">
 									<img class="reviews__author-image" src="img/author-ivan-mobile.jpg" srcset="img/author-ivan-mobile@2x.jpg 2x" alt="Фото Ивана Бородайло">
@@ -261,7 +273,7 @@
 				<li class="social__item">
 					<a class="social__link" href="#">
 						<svg class="social__icon social__icon--vkontakte" width="27" height="15">
-							<use xlink:href="img/sprite.svg#icon-social-vk"></use>
+							<use xlink:href="img/svg/sprite.svg#icon-social-vk"></use>
 						</svg>
 						Мы в Вконтакте
 					</a>
@@ -269,7 +281,7 @@
 				<li class="social__item">
 					<a class="social__link" href="#">
 						<svg class="social__icon social__icon--facebook" width="19" height="36">
-							<use xlink:href="img/sprite.svg#icon-social-facebook"></use>
+							<use xlink:href="img/svg/sprite.svg#icon-social-facebook"></use>
 						</svg>
 						Мы в Фейсбуке
 					</a>
@@ -277,7 +289,7 @@
 				<li class="social__item">
 					<a class="social__link" href="#">
 						<svg class="social__icon social__icon--instagram" width="36" height="36">
-							<use xlink:href="img/sprite.svg#icon-social-instagram"></use>
+							<use xlink:href="img/svg/sprite.svg#icon-social-instagram"></use>
 						</svg>
 						Мы в Инстаграме
 					</a>
@@ -305,14 +317,14 @@
 			<label class="visually-hidden" for="user-login">Логин</label>
 			<input class="text-input login-form__input login-form__input--icon-user" id="user-login" type="text" name="login" placeholder="Логин">
 			<svg class="login-form__icon" width="15" height="15">
-				<use xlink:href="img/sprite.svg#icon-login-user"></use>
+				<use xlink:href="img/svg/sprite.svg#icon-login-user"></use>
 			</svg>
 		</p>
 		<p class="login-form__item">
 			<label class="visually-hidden" for="user-password">Пароль</label>
 			<input class="text-input login-form__input login-form__input--icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
 			<svg class="login-form__icon" width="15" height="15">
-				<use xlink:href="img/sprite.svg#icon-login-lock"></use>
+				<use xlink:href="img/svg/sprite.svg#icon-login-lock"></use>
 			</svg>
 		</p>
 		<p class="login-form__login-password-info">
