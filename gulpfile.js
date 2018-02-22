@@ -50,7 +50,7 @@ gulp.task("style", function () {
 gulp.task("html", function () {
 	return gulp.src("app/*.html")
 	.pipe(posthtml([
-		 include()
+		include()
 	]))
 	.pipe(htmlmin({
 		collapseWhitespace: true,
@@ -172,10 +172,22 @@ gulp.task("copy", function () {
 	.pipe(gulp.dest("build"));
 });
 
+gulp.task("copy:favicon", function () {
+	return gulp.src("app/favicon/*.{png,ico,svg}")
+		.pipe(gulp.dest("build/img/favicon"));
+});
+
+gulp.task("copy:favicon:data", function () {
+	return gulp.src("app/favicon/*.{xml,webmanifest}")
+		.pipe(gulp.dest("build"));
+});
+
 gulp.task("build", function (done) {
 	run(
 		"clean",
 		"copy",
+		"copy:favicon",
+		"copy:favicon:data",
 		"style",
 		"html",
 		"js",

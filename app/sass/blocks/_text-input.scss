@@ -9,7 +9,7 @@
 	text-transform: inherit;
 	background-color: #fff;
 	border: 1px solid #e5ddd5;
-	transition: all 0.2s;
+	transition: all 0.3s;
 
 	&:hover,
 	&:focus {
@@ -22,25 +22,13 @@
 
 	&::placeholder {
 		color: #000;
+		opacity: 1;
+		transition: opacity 0.3s;
 	}
 
-	/*
-	&::-webkit-input-placeholder {
-		color: #000;
+	&:focus::placeholder {
+		opacity: 0;
 	}
-
-	&::-moz-placeholder {
-		color: #000;
-	}
-
-	&:-moz-placeholder {
-		color: #000;
-	}
-
-	&:-ms-input-placeholder {
-		color: #000 !important;
-	}
-	*/
 }
 
 
