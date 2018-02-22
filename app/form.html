@@ -2,17 +2,12 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="keywords" content="displayflex, HTML Academy, Barbershop-Borodinski,
-  Borodinski, Барбершоп Бородинский, стрижка, запись на стрижку, модель бороды,
-  адмирал, лесоруб, полярник, боярин, мудрец, подкрасить бороду, накрутить усы,
-  причесать бороду, подровнять виски, убрать седину, отполировать лысину">
-	<meta name="description" content="Забудьте, как вы стриглись раньше. Мы сделаем
-  из вас звезду футбола или кино. Во всяком случае внешне.">
+	<meta name="keywords" content="displayflex, HTML Academy, Barbershop-Borodinski, Borodinski, Барбершоп Бородинский, стрижка, запись на стрижку, модель бороды, адмирал, лесоруб, полярник, боярин, мудрец, подкрасить бороду, накрутить усы, причесать бороду, подровнять виски, убрать седину, отполировать лысину">
+	<meta name="description" content="Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.">
 	<meta name="author" content="https://github.com/displayflex">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
 	<title>Барбершоп «Бородинский»</title>
-	<link rel="stylesheet" href="css/style.min.css">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
@@ -21,6 +16,8 @@
 	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#ffc40d">
 	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
@@ -130,7 +127,7 @@
 					<legend class="order-form__legend">Выберите модель бороды:</legend>
 					<ul class="order-form__beard-list">
 							<li class="order-form__beard-option">
-								<input class="order-form__radio" id="admiral" type="radio" name="beard-list" checked>
+								<input class="order-form__radio visually-hidden--focusable" id="admiral" type="radio" name="beard-list" checked>
 								<label class="order-form__radio-label" for="admiral">адмирал</label>
 								<svg class="order-form__icon order-form__icon--admiral" width="22" height="21">
 									<use xlink:href="img/svg/sprite.svg#icon-service-beard"></use>
@@ -138,7 +135,7 @@
 							</li>
 
 							<li class="order-form__beard-option">
-								<input class="order-form__radio" id="lumberjack" type="radio" name="beard-list">
+								<input class="order-form__radio visually-hidden--focusable" id="lumberjack" type="radio" name="beard-list">
 								<label class="order-form__radio-label" for="lumberjack">лесоруб</label>
 								<svg class="order-form__icon order-form__icon--lumberjack" width="58" height="69">
 									<use xlink:href="img/svg/sprite.svg#icon-beard-2"></use>
@@ -146,7 +143,7 @@
 							</li>
 
 							<li class="order-form__beard-option">
-								<input class="order-form__radio" id="polar-explorer" type="radio" name="beard-list">
+								<input class="order-form__radio visually-hidden--focusable" id="polar-explorer" type="radio" name="beard-list">
 								<label class="order-form__radio-label" for="polar-explorer">полярник</label>
 								<svg class="order-form__icon order-form__icon--explorer" width="62" height="79">
 									<use xlink:href="img/svg/sprite.svg#icon-beard-3"></use>
@@ -154,7 +151,7 @@
 							</li>
 
 							<li class="order-form__beard-option">
-								<input class="order-form__radio" id="boyar" type="radio" name="beard-list">
+								<input class="order-form__radio visually-hidden--focusable" id="boyar" type="radio" name="beard-list">
 								<label class="order-form__radio-label" for="boyar">боярин</label>
 								<svg class="order-form__icon order-form__icon--boyar" width="57" height="98">
 									<use xlink:href="img/svg/sprite.svg#icon-beard-4"></use>
@@ -162,7 +159,7 @@
 							</li>
 
 							<li class="order-form__beard-option">
-								<input class="order-form__radio" id="sage" type="radio" name="beard-list">
+								<input class="order-form__radio visually-hidden--focusable" id="sage" type="radio" name="beard-list">
 								<label class="order-form__radio-label" for="sage">мудрец</label>
 								<svg class="order-form__icon order-form__icon--sage" width="45" height="105">
 									<use xlink:href="img/svg/sprite.svg#icon-beard-5"></use>
@@ -175,32 +172,32 @@
 					<legend class="order-form__legend order-form__legend--bigger-margin">Дополнительные услуги:</legend>
 					<ul class="order-form__services-list">
 							<li class="order-form__services-option order-form__services-option--beard-dyeing">
-								<input class="order-form__checkbox" id="beard-dyeing" type="checkbox" name="beard-dyeing" checked>
+								<input class="order-form__checkbox visually-hidden--focusable" id="beard-dyeing" type="checkbox" name="beard-dyeing" checked>
 								<label class="order-form__checkbox-label" for="beard-dyeing">Подкрасить бороду</label>
 							</li>
 
 							<li class="order-form__services-option order-form__services-option--whiskers-cheat">
-								<input class="order-form__checkbox" id="whiskers-cheat" type="checkbox" name="whiskers-cheat" checked>
+								<input class="order-form__checkbox visually-hidden--focusable" id="whiskers-cheat" type="checkbox" name="whiskers-cheat" checked>
 								<label class="order-form__checkbox-label" for="whiskers-cheat">Накрутить усы</label>
 							</li>
 
 							<li class="order-form__services-option order-form__services-option--beard-combing">
-								<input class="order-form__checkbox" id="beard-combing" type="checkbox" name="beard-combing">
+								<input class="order-form__checkbox visually-hidden--focusable" id="beard-combing" type="checkbox" name="beard-combing">
 								<label class="order-form__checkbox-label" for="beard-combing">Причесать бороду</label>
 							</li>
 
 							<li class="order-form__services-option order-form__services-option--temples-trimming">
-								<input class="order-form__checkbox" id="temples-trimming" type="checkbox" name="temples-trimming">
+								<input class="order-form__checkbox visually-hidden--focusable" id="temples-trimming" type="checkbox" name="temples-trimming">
 								<label class="order-form__checkbox-label" for="temples-trimming">Подровнять виски</label>
 							</li>
 
 							<li class="order-form__services-option order-form__services-option--graying-remove">
-								<input class="order-form__checkbox" id="graying-remove" type="checkbox" name="graying-remove">
+								<input class="order-form__checkbox visually-hidden--focusable" id="graying-remove" type="checkbox" name="graying-remove">
 								<label class="order-form__checkbox-label" for="graying-remove">Убрать седину</label>
 							</li>
 
 							<li class="order-form__services-option order-form__services-option--bald-head-polishing">
-								<input class="order-form__checkbox" id="bald-head-polishing" type="checkbox" name="bald-head-polishing">
+								<input class="order-form__checkbox visually-hidden--focusable" id="bald-head-polishing" type="checkbox" name="bald-head-polishing">
 								<label class="order-form__checkbox-label" for="bald-head-polishing">Отполировать лысину</label>
 							</li>
 						</ul>

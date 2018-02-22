@@ -45,7 +45,7 @@
 		left: 0;
 		display: block;
 		width: 50px;
-		height: 44px;
+		height: 50px;
 		padding-top: 6px;
 		font-weight: 400;
 		font-size: 16px;
@@ -87,7 +87,6 @@
 	}
 
 	&__to-all {
-		box-sizing: border-box;
 		min-width: 280px;
 	}
 }
@@ -159,7 +158,6 @@
 		}
 
 		&__item {
-			box-sizing: border-box;
 			width: 50%;
 			padding-right: 40px;
 
@@ -172,7 +170,6 @@
 			position: absolute;
 			top: 40px;
 			right: 0;
-			box-sizing: border-box;
 			min-width: 160px;
 		}
 	}

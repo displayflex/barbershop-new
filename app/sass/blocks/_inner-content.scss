@@ -3,7 +3,7 @@
 	background-color: $bg-lightgrey;
 
 	&__wrapper {
-		max-width: 450px;
+		max-width: 490px;
 		margin: 0 auto;
 		padding: 31px 20px 14px;
 	}
@@ -40,7 +40,7 @@
 @media (min-width: $tablet-width) {
 	.inner-content {
 		&__wrapper {
-			max-width: 850px;
+			max-width: 978px;
 			padding: 53px 64px 21px;
 		}
 
@@ -62,7 +62,6 @@
 
 		&__link {
 			display: inline-block;
-			box-sizing: border-box;
 			min-width: 160px;
 		}
 
@@ -81,7 +80,7 @@
 @media (min-width: $desktop-width) {
 	.inner-content {
 		&__wrapper {
-			max-width: 1200px;
+			max-width: 1440px;
 			padding: 53px 120px 47px;
 		}
 

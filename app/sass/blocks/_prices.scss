@@ -1,6 +1,6 @@
 .prices {
 	&__wrapper {
-		max-width: 450px;
+		max-width: 490px;
 		margin-right: auto;
 		margin-left: auto;
 		padding: 37px 20px 19px;
@@ -32,7 +32,7 @@
 @media (min-width: $tablet-width) {
 	.prices {
 		&__wrapper {
-			max-width: 850px;
+			max-width: 978px;
 			padding: 44px 64px 60px;
 		}
 
@@ -59,7 +59,7 @@
 			flex-wrap: wrap;
 			justify-content: space-between;
 			align-items: flex-start;
-			max-width: 1200px;
+			max-width: 1440px;
 			padding: 78px 120px 88px;
 		}
 

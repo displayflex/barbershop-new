@@ -13,9 +13,9 @@
 .stats__slogan {
 	display: block;
 	margin-bottom: 15px;
+	font-weight: bold;
 	font-size: 30px;
 	line-height: 30px;
-	font-weight: bold;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -87,9 +87,9 @@
 
 .stats__value {
 	padding-right: 0;
+	font-weight: 700;
 	font-size: 40px;
 	line-height: 40px;
-	font-weight: 700;
 }
 
 .stats__value sup {
@@ -107,7 +107,7 @@
 @media (min-width: $tablet-width) {
 	.stats {
 		//width: 640px; //для не резиновой версии
-		width: 84%; //для резиновой версии
+		width: 83%; //для резиновой версии
 		max-width: 1200px; //для резиновой версии
 		margin: 0 auto; //для резиновой версии
 		margin-top: -185px;
@@ -146,7 +146,7 @@
 
 	.stats__intro {
 		//width: 210px; //для не резиновой версии
-		width: 37.5%; //для резиновой версии
+		width: 50%; //для резиновой версии (33.5%?)
 		margin-top: 5px;
 		//padding-right: 47px; //для не резиновой версии
 		padding: 0; //для резиновой версии
@@ -171,13 +171,12 @@
 	}
 
 	.stats__list tr {
+		display: block;
 		//width: 250px; //для не резиновой версии
 		width: 50%; //для резиновой версии
 		max-width: 50%;
-		box-sizing: border-box; //для резиновой версии
 		padding: 25px 35px;
 		padding-bottom: 28px;
-		display: block;
 	}
 
 	.stats__list td {
@@ -206,15 +205,16 @@
 @media (min-width: $desktop-width) {
 	.stats {
 		display: flex;
+		width: 80%;
 		//width: 960px; //для не резиновой версии
 		margin-top: -160px;
 	}
 
 	.stats__header {
+		flex-grow: 1; //для резиновой версии
 		//display: block; //для не резиновой версии
 		flex-direction: column; //для резиновой версии
-		flex-grow: 1; //для резиновой версии
-		width: 240px;
+		width: 320px;
 
 		&::before {
 			top: 22px;
@@ -240,8 +240,8 @@
 
 	.stats__list {
 		display: flex;
-		width: 640px;
 		flex-grow: 1; //для резиновой версии
+		width: 640px;
 	}
 }
 
