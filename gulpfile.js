@@ -173,12 +173,12 @@ gulp.task("copy", function () {
 });
 
 gulp.task("copy:favicon", function () {
-	return gulp.src("app/favicon/*.{png,ico,svg}")
+	return gulp.src(["app/favicon/*.{png,svg}"])
 		.pipe(gulp.dest("build/img/favicon"));
 });
 
 gulp.task("copy:favicon:data", function () {
-	return gulp.src("app/favicon/*.{xml,webmanifest}")
+	return gulp.src(["app/favicon/*.{xml,webmanifest}", "app/favicon/favicon.ico"])
 		.pipe(gulp.dest("build"));
 });
 
