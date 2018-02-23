@@ -1,6 +1,6 @@
 .inner-content {
-	color: #000;
-	background-color: $bg-lightgrey;
+	color: $black;
+	background-color: $light-beige;
 
 	&__wrapper {
 		max-width: 490px;
@@ -26,13 +26,13 @@
 	}
 
 	&::after {
-		@include triangle(34px, $bg-lightgrey, down, $bg-darkgrey, calc(50vw));
+		@include triangle(34px, $light-beige, down, $mid-grey, calc(50vw));
 	}
 
 	&--dark-triangle {
 		&::after {
-			border-right-color: #292929;
-			border-left-color: #292929;
+			border-right-color: $dark-grey;
+			border-left-color: $dark-grey;
 		}
 	}
 }

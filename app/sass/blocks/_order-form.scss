@@ -103,17 +103,17 @@
 		font-size: 18px;
 		line-height: 1.33;
 		font-family: "PT Sans Narrow", "Arial", sans-serif;
-		color: #fff;
+		color: $white;
 		text-transform: uppercase;
 		background-color: $brown;
 
 		&:hover,
 		&:focus {
-			background-color: #6a4d38;
+			background-color: $dark-brown;
 		}
 
 		&:active {
-			color: rgba(#fff, 0.3);
+			color: rgba($white, 0.3);
 		}
 	}
 }
@@ -140,8 +140,8 @@
 	display: block;
 	width: 51px;
 	height: 51px;
-	background-color: #fff;
-	border: 1px solid #e5ddd5;
+	background-color: $white;
+	border: 1px solid $beige;
 	border-radius: 50%;
 	transform: translateX(-50%);
 	transition: all 0.2s;
@@ -150,13 +150,13 @@
 .order-form__radio-label:hover,
 .order-form__radio-label:focus {
 	&::before {
-		border-color: #d5c9bd;
+		border-color: $darker-beige;
 	}
 }
 
 .order-form__radio-label:active {
 	&::before {
-		background-color: #d5c9bd;
+		background-color: $darker-beige;
 	}
 }
 
@@ -168,8 +168,8 @@
 	display: block;
 	width: 18px;
 	height: 18px;
-	background-color: #fff;
-	border: 1px solid #e5ddd5;
+	background-color: $white;
+	border: 1px solid $beige;
 	border-radius: 50%;
 	transform:
 		translateX(-50%)
@@ -179,7 +179,7 @@
 
 .order-form__radio:checked:hover + .order-form__radio-label::after,
 .order-form__radio:checked:focus + .order-form__radio-label::after {
-	border-color: #d5c9bd;
+	border-color: $darker-beige;
 }
 
 .order-form__radio:focus + .order-form__radio-label::before {
@@ -208,21 +208,21 @@
 	left: 1px;
 	width: 36px;
 	height: 36px;
-	background-color: #fff;
-	border: 1px solid #e5ddd5;
+	background-color: $white;
+	border: 1px solid $beige;
 	transition: all 0.2s;
 }
 
 .order-form__checkbox-label:hover,
 .order-form__checkbox-label:focus {
 	&::before {
-		border-color: #d5c9bd;
+		border-color: $darker-beige;
 	}
 }
 
 .order-form__checkbox-label:active {
 	&::before {
-		background-color: #d5c9bd;
+		background-color: $darker-beige;
 	}
 }
 
@@ -230,12 +230,12 @@
 	content: "";
 	position: absolute;
 	top: 10px;
-	left: 7px;
+	left: 8px;
 	width: 22px;
 	height: 10px;
 	background-color: transparent;
-	border-bottom: 2px solid #000;
-	border-left: 2px solid #000;
+	border-bottom: 2px solid $black;
+	border-left: 2px solid $black;
 	transform: rotate(-45deg);
 }
 
@@ -276,7 +276,7 @@
 				width: 9999px;
 				height: 1px;
 				margin-top: -4px;
-				background-color: #e5ddd5;
+				background-color: $beige;
 			}
 
 			&::before {

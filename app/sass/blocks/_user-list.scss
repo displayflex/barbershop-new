@@ -4,7 +4,7 @@
 	padding: 17px 21px;
 	padding-left: 49px;
 	line-height: 18px;
-	color: #fff;
+	color: $white;
 	text-decoration: none;
 }
 
@@ -16,7 +16,7 @@
 	height: 16px;
 	opacity: 0.3;
 
-	fill: #fff;
+	fill: $white;
 }
 
 @media (min-width: $tablet-width) {
@@ -65,19 +65,19 @@
 		text-decoration: none;
 
 		&:hover {
-			color: #000;
-			background-color: #fff;
+			color: $black;
+			background-color: $white;
 		}
 
 		&:active {
-			color: rgba(0, 0, 0, 0.3);
-			background-color: #fff;
+			color: rgba($black, 0.3);
+			background-color: $white;
 		}
 
 		&:hover .user-list__login-icon {
 			opacity: 0.3;
 
-			fill: #000;
+			fill: $black;
 		}
 	}
 }

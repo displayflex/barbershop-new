@@ -173,7 +173,7 @@ gulp.task("copy", function () {
 });
 
 gulp.task("copy:favicon", function () {
-	return gulp.src(["app/favicon/*.{png,svg}"])
+	return gulp.src("app/favicon/*.{png,svg}")
 		.pipe(gulp.dest("build/img/favicon"));
 });
 

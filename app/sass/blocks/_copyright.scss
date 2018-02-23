@@ -15,20 +15,20 @@
 		min-width: 160px;
 		padding: 10px 20px;
 		line-height: 1.5;
-		color: #fff;
-		background-color: #292929;
-		border-color: #3e3e3e;
+		color: $white;
+		background-color: $dark-grey;
+		border-color: $grey;
 
 		&:hover,
 		&:focus {
-			border-color: #515151;
+			border-color: $lighter-grey;
 			cursor: pointer;
 		}
 
 		&:active {
-			color: rgba(#fff, 0.3);
-			background-color: #252525;
-			border-color: #252525;
+			color: rgba($white, 0.3);
+			background-color: $darkest-grey;
+			border-color: $darkest-grey;
 		}
 	}
 }

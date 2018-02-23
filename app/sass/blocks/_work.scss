@@ -5,7 +5,7 @@
 		height: 176px;
 		overflow: hidden;
 		text-align: center;
-		background-color: #e5ddd5;
+		background-color: $beige;
 	}
 
 	&__image {
@@ -25,7 +25,7 @@
 		font-size: 20px;
 		line-height: 50px;
 		text-align: left;
-		color: #fff;
+		color: $white;
 		text-transform: uppercase;
 		background-color: $brown;
 
@@ -47,7 +47,7 @@
 	&__info {
 		flex-grow: 1;
 		padding: 20px 0 0 20px;
-		border: 1px solid #e5ddd5;
+		border: 1px solid $beige;
 		border-top: none;
 	}
 
@@ -125,7 +125,7 @@
 			display: flex;
 			flex-direction: column;
 			padding: 43px 50px 15px;
-			border-top: 1px solid #e5ddd5;
+			border-top: 1px solid $beige;
 		}
 
 		&__title {

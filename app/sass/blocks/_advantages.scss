@@ -1,7 +1,7 @@
 .advantages {
 	overflow: hidden;
 	text-align: center;
-	background-color: #242424;
+	background-color: $darkest-grey;
 
 	&__wrapper {
 		padding-bottom: 7px;
@@ -59,7 +59,7 @@
 	}
 
 	&::after {
-		@include triangle(34px, #242424, down, $bg-lightgrey, calc(50vw));
+		@include triangle(34px, $darkest-grey, down, $light-beige, calc(50vw));
 	}
 }
 
@@ -68,7 +68,7 @@
 		width: 100%;
 		min-width: 768px;
 		text-align: left;
-		background-color: #353535;
+		background-color: $mid-grey;
 
 		&__wrapper {
 			padding-bottom: 6px;
@@ -106,7 +106,7 @@
 
 		&::after {
 			border-top-width: 43px;
-			border-top-color: #353535;
+			border-top-color: $mid-grey;
 		}
 	}
 }

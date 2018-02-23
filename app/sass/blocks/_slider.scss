@@ -25,24 +25,24 @@
 		padding: 0;
 		font-size: 0;
 		vertical-align: top;
-		background-color: #242424;
+		background-color: $darkest-grey;
 		border: 2px solid #959595;
 		transform: rotate(45deg);
 		transition: all 0.2s;
 
 		&:hover {
-			background-color: #fff;
-			border-color: #fff;
+			background-color: $white;
+			border-color: $white;
 			cursor: pointer;
 		}
 
 		&--dark {
-			background-color: #f8f5f2;
+			background-color: $light-beige;
 			border-color: #939290;
 
 			&:hover {
-				background-color: #353535;
-				border-color: #353535;
+				background-color: $mid-grey;
+				border-color: $mid-grey;
 			}
 		}
 	}
@@ -55,8 +55,8 @@
 		height: 100%;
 		padding: 0;
 		font-size: 0;
-		background-color: #f8f5f2;
-		border: 1px solid #e5ddd5;
+		background-color: $light-beige;
+		border: 1px solid $beige;
 
 		&::after {
 			content: "";
@@ -73,11 +73,11 @@
 
 		&:hover,
 		&:focus {
-			border-color: #d5c9bd;
+			border-color: $darker-beige;
 		}
 
 		&:active {
-			background-color: #d5c9bd;
+			background-color: $darker-beige;
 			border-color: #958c84;
 		}
 	}
@@ -86,8 +86,8 @@
 #advantages-switch-1:checked ~ .slider__toggles label[for="advantages-switch-1"],
 #advantages-switch-2:checked ~ .slider__toggles label[for="advantages-switch-2"],
 #advantages-switch-3:checked ~ .slider__toggles label[for="advantages-switch-3"] {
-	background-color: #fff;
-	border-color: #fff;
+	background-color: $white;
+	border-color: $white;
 
 	&:hover {
 		cursor: default;
@@ -97,8 +97,8 @@
 #reviews-switch-1:checked ~ .slider__toggles label[for="reviews-switch-1"],
 #reviews-switch-2:checked ~ .slider__toggles label[for="reviews-switch-2"],
 #reviews-switch-3:checked ~ .slider__toggles label[for="reviews-switch-3"] {
-	background-color: #353535;
-	border-color: #353535;
+	background-color: $mid-grey;
+	border-color: $mid-grey;
 
 	&:hover {
 		cursor: default;
@@ -112,7 +112,7 @@
 	display: block;
 
 	&::after {
-		border-right: 12px solid #000;
+		border-right: 12px solid $black;
 		border-left: none;
 	}
 }
@@ -125,7 +125,7 @@
 
 	&::after {
 		border-right: none;
-		border-left: 12px solid #000;
+		border-left: 12px solid $black;
 	}
 }
 

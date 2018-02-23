@@ -7,9 +7,9 @@
 	width: 320px;
 	margin-left: -160px;
 	padding: 33px 20px 37px;
-	color: #000;
-	background-color: $bg-lightgrey;
-	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	color: $black;
+	background-color: $light-beige;
+	box-shadow: 0 30px 50px rgba($black, 0.7);
 
 	&__close {
 		position: absolute;
@@ -17,9 +17,9 @@
 		bottom: 37px;
 		width: 130px;
 		height: auto;
-		color: #000;
-		background-color: $bg-lightgrey;
-		border: 1px solid #e5ddd5;
+		color: $black;
+		background-color: $light-beige;
+		border: 1px solid $beige;
 
 		&::before,
 		&::after {
@@ -30,7 +30,7 @@
 			display: none;
 			width: 34px;
 			height: 2px;
-			background-color: #fff;
+			background-color: $white;
 			border-radius: 1px;
 		}
 

@@ -19,21 +19,21 @@
 		margin-top: 16px;
 		padding: 10px 20px;
 		font-weight: 700;
-		color: #fff;
+		color: $white;
 		text-decoration: none;
-		border: 1px solid #3e3e3e;
+		border: 1px solid $grey;
 		transition: all 0.3s ease;
 
 		&:hover,
 		&:focus {
-			border-color: #515151;
+			border-color: $lighter-grey;
 			cursor: pointer;
 		}
 
 		&:active {
-			color: rgba(#fff, 0.3);
-			background-color: #252525;
-			border-color: #252525;
+			color: rgba($white, 0.3);
+			background-color: $darkest-grey;
+			border-color: $darkest-grey;
 		}
 	}
 
@@ -62,13 +62,13 @@
 
 			&:hover,
 			&:focus {
-				border-color: #fff;
+				border-color: $white;
 			}
 
 			&:active {
-				color: rgba(#fff, 0.3);
+				color: rgba($white, 0.3);
 				background-color: transparent;
-				border-color: rgba(#fff, 0.3);
+				border-color: rgba($white, 0.3);
 			}
 		}
 

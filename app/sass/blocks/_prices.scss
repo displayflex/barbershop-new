@@ -25,7 +25,7 @@
 	}
 
 	&::after {
-		@include triangle(34px, $bg-darkgrey, down, #292929, calc(50vw));
+		@include triangle(34px, $mid-grey, down, $dark-grey, calc(50vw));
 	}
 }
 

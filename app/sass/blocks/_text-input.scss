@@ -6,13 +6,13 @@
 	line-height: 1.66;
 	color: inherit;
 	text-transform: inherit;
-	background-color: #fff;
-	border: 1px solid #e5ddd5;
+	background-color: $white;
+	border: 1px solid $beige;
 	transition: all 0.3s;
 
 	&:hover,
 	&:focus {
-		border-color: #d5c9bd;
+		border-color: $darker-beige;
 	}
 
 	&:active {
@@ -20,7 +20,7 @@
 	}
 
 	&::placeholder {
-		color: #000;
+		color: $black;
 		opacity: 1;
 		transition: opacity 0.3s;
 	}
