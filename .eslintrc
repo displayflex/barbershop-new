@@ -1,0 +1,13 @@
+{
+    "env": {
+        "browser": true
+    },
+    "extends": "airbnb-base",
+    "rules": {
+        "indent": ["error", "tab"],
+        "no-tabs": ["off"],
+        "prefer-arrow-callback": ["off"],
+        "no-var": ["off"],
+        "func-names": ["off"]
+    }
+}

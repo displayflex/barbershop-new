@@ -22,6 +22,7 @@ var htmlmin = require("gulp-htmlmin");
 var tinypng = require("gulp-tinypng-compress");
 var notify = require("gulp-notify");
 var mqpacker = require('css-mqpacker');
+var colorguard = require('colorguard');
 
 // CSS
 
@@ -43,6 +44,16 @@ gulp.task("style", function () {
 	.pipe(rename("style.min.css"))
 	.pipe(gulp.dest("build/css"))
 	.pipe(server.stream());
+});
+
+gulp.task("colorguard", function () {
+	gulp.src("build/css/style.css")
+	.pipe(postcss([
+		colorguard({
+			threshold: 1,
+			allowEquivalentNotation: true
+		})
+	]))
 });
 
 // HTML
