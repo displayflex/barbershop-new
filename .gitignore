@@ -6,7 +6,6 @@
 *.psd
 *.sublime*
 build/
-dist/
 app/css/*.css
 node_modules/
 npm-debug.*
