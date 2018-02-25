@@ -183,7 +183,8 @@
 }
 
 .order-form__radio:focus + .order-form__radio-label::before {
-	outline: 1px solid $brown;
+	outline: none;
+	border-color: $brown;
 }
 
 // Стилизация чекбоксов

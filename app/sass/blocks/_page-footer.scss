@@ -45,7 +45,7 @@
 @media (min-width: $desktop-width) {
 	.page-footer {
 		&__wrapper {
-			flex-wrap: no-wrap;
+			flex-wrap: nowrap;
 			justify-content: flex-start;
 			max-width: 1440px;
 			margin: 0 auto;
