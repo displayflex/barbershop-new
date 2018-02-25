@@ -8,6 +8,9 @@
         "no-tabs": ["off"],
         "prefer-arrow-callback": ["off"],
         "no-var": ["off"],
-        "func-names": ["off"]
+        "func-names": ["off"],
+        "prefer-template": ["off"],
+        "comma-dangle": ["off"],
+        "strict": ["safe"]
     }
 }
