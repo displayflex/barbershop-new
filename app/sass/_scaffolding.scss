@@ -2,6 +2,7 @@
 	font-weight: normal;
 	font-family: "PT Sans Narrow";
 	font-style: normal;
+	font-display: swap;
 
 	src:
 		url("../fonts/PTSansNarrow.woff2") format("woff2"),
@@ -12,6 +13,7 @@
 	font-weight: bold;
 	font-family: "PT Sans Narrow";
 	font-style: normal;
+	font-display: swap;
 
 	src:
 		url("../fonts/PTSansNarrowBold.woff2") format("woff2"),
@@ -38,7 +40,7 @@ body {
 	background-color: $mid-grey;
 
 	*:focus {
-		outline-color: $brown;
+		outline: 1px solid $brown;
 	}
 }
 
@@ -56,8 +58,8 @@ img {
 	overflow: hidden;
 	white-space: nowrap;
 	border: 0;
-	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
+	clip-path: inset(100%);
 }
 
 .visually-hidden--focusable {
@@ -69,14 +71,14 @@ img {
 	overflow: hidden;
 	white-space: nowrap;
 	border: 0;
-	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
+	clip-path: inset(100%);
 }
 
 .js-no-scroll {
-	height: 100%;
-	width: 100%;
 	position: fixed;
+	width: 100%;
+	height: 100%;
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
