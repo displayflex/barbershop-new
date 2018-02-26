@@ -41,6 +41,7 @@
 			border-right: 8px solid transparent;
 			border-bottom: 25px solid $brown;
 			border-left: 8px solid $brown;
+			-webkit-transform: rotate(360deg); // fixes Safari bug
 		}
 	}
 
